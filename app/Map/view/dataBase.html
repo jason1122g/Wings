@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DATABASE</title>
+    <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
+</head>
+<body>
+    <input id="input" type="text" placeholder="data"><button onclick="submit()">CREATE</button>
+    <div id="result"></div>
+    <script>
+        function submit(){
+            var input = $('#input');
+            var result =$('#result');
+            $.ajax({
+                type:'POST',
+                url:"http://appforncu.appspot.com/getmap",
+                data:{type:"create",data:JSON.stringify(input.val())},
+                dataType:"text",
+                success:function(data){
+                    result.html(data);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

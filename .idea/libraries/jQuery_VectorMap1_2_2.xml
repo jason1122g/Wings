@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jQuery-VectorMap1.2.2" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+      <option name="frameworkVersion" value="1.2.2" />
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../Libs/js/jquery-jvectormap-1.2.2.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

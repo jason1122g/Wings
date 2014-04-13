@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AttackDB</title>
+    <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
+    <meta http-equiv="cache-control" content="no-cache">
+</head>
+<body>
+    123
+    <script>
+        $(document).ready(function(){
+            var count=0;
+            var t = JSON.stringify({
+                        name:"customLayer",
+                        type:"FeatureCollection",
+                        features:[
+                            {
+                                type:"Feature",
+                                properties:{
+                                    title:'Helloworld-Version2',
+                                    img:'/public/image/logo.png',
+                                    link:'http://appforncu.appspot.com/',
+                                    number:10,
+                                    icon:{
+                                        icon:'fa-laptop',
+                                        iconColor:'#fff',
+                                        prefix:'fa',
+                                        markerColor:'#00f'
+                                    }
+                                },
+                                geometry:{
+                                    type:"Point",
+                                    coordinates:[24.968282,121.192511]
+                                }
+                            }]
+                    }
+            );
+            setInterval(attack,100);
+            function attack(){
+                $.ajax({
+                    type:'POST',
+                    url:"http://appforncu.appspot.com/getmap",
+                    data:{type:"create",data:t},
+                    dataType:"text",
+                    success:function(textData){
+                        console.log(count++);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
