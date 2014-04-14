@@ -3,15 +3,18 @@
 var NCUCalendar = {};
 NCUCalendar.Calendar = function(initiator){
 
+    var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
 
-
-    init();
+    var calendar = init();
+    initCalendarState();
 
     function init(){
         var containerSelector = initContainerSelector(initiator);
+        var eventListSelector = initEventList(initiator);
         var resourceBank = initResourceBank();
-        initCalendar({
-            containerSelector:containerSelector,
+        return initCalendar({
+            containerSelector:$(containerSelector),
+            eventListSelector:$(eventListSelector),
             resourceBank:resourceBank
         });
     }
@@ -25,90 +28,225 @@ NCUCalendar.Calendar = function(initiator){
         return containerSelector;
     }
     function initResourceBank(){
-        var resourceBank = new JResource.ResourceController({
+        return new JResource.ResourceController({
             resourceGetter:getResourceRemoteFunc
         });
-        function getResourceRemoteFunc(resourceName,processFunc){
+        function getResourceRemoteFunc(resourceName,processFuncCallBack){
+
+            var thisYearAndMonth = resourceName;
+
             $.ajax({
                 type:'POST',
                 url:"https://appforncu.appspot.com/getevent",
-                data:{type:"read",data:resourceName},
+                data:{type:"read",data:thisYearAndMonth},
                 dataType:"text",
-                success:function(textResourceRemote){
-                    var jsonResourceRemote = JSON.parse(textResourceRemote);
-                    if(isResourceCorrect(jsonResourceRemote)){
-                        processFunc(getResourceData(jsonResourceRemote));
+                success:function(textResourceMessage){
+                    var jsonResourceMessage = JSON.parse(textResourceMessage);
+                    if(isResourceCorrectByJSON(jsonResourceMessage)){
+                        var resourceData = getResourceDataByJSON(jsonResourceMessage);
+                        var eventArrayCollection = parseDataIntoHTMLAndSelectorWithThisYearMonth(resourceData,thisYearAndMonth);
+                        processFuncCallBack(eventArrayCollection);
                     }else{
                         console.log("GG:NOT OK");
                     }
                 }
             });
+
+            function getResourceDataByJSON(resource){
+                return resource["data"]["data"];
+            }
+            function isResourceCorrectByJSON(resource){
+                return resource["data"]["code"]=="OK";
+            }
         }
-        function getResourceData(resource){
-            return resource["data"]["data"];
+        function parseDataIntoHTMLAndSelectorWithThisYearMonth(arrEventObject,thisYearAndMonth){
+
+            var eventHTMLArray=[];
+            var eventSelectorNameArray=[];
+            var eventDateToHTMLIndexArray={};
+            var eventCounter;
+            for(eventCounter=0;eventCounter<arrEventObject.length;eventCounter++){
+                var event = arrEventObject[eventCounter];
+                processEventWithThisYearMonth(event,thisYearAndMonth);
+            }
+            return {
+                eventHTMLArray:eventHTMLArray,
+                eventSelectorNameArray:eventSelectorNameArray,
+                eventDateToHTMLIndexArray:eventDateToHTMLIndexArray
+            };
+
+            function processEventWithThisYearMonth(event,thisYearAndMonth){
+                var name = event["name"];
+                var timeFrom = event['from'];
+                var timeTo = event['to'];
+                var dateFrom = parseTimeIntoDate(timeFrom);
+                var dateTo = parseTimeIntoDate(timeTo);
+                var dateThis = parseTimeIntoDate(thisYearAndMonth+"-01"); //rule of momentJS
+                var startDate=0,endDate=31;
+
+                calculateStartDateAndEndDate();
+
+                applyEventToSelectorNameArray();
+                applyEventToHTMLArray();
+                applyEventDateToHTMLIndexArrayMap();
+
+                function calculateStartDateAndEndDate(){
+                    if(isAlloutsideThisMonth()){
+                        startDate = 0;
+                        endDate   = 31;
+                    }else if(isLeftOutsideThisMonth()){
+                        startDate = 0;
+                        endDate = dateTo.getDate();
+                    }else if(isRightOutsideThisMonth()){
+                        startDate = dateFrom.getDate();
+                        endDate = 31;
+                    }else{
+                        startDate = dateFrom.getDate();
+                        endDate = dateTo.getDate();
+                    }
+                    function isAlloutsideThisMonth(){
+                        return (dateFrom.getMonth()<dateThis.getMonth()&&dateTo.getMonth()>dateThis.getMonth())
+                    }
+                    function isLeftOutsideThisMonth(){
+                        return dateFrom.getMonth() < dateThis.getMonth();
+                    }
+                    function isRightOutsideThisMonth(){
+                        return dateTo.getMonth() > dateThis.getMonth();
+                    }
+                }
+                function applyEventToSelectorNameArray(){
+                    for(var i=startDate;i<=endDate;i++){
+                        var eachDate = thisYearAndMonth +"-"+ formatIntegerDayToString(i);
+                        eventSelectorNameArray.push('.calendar-day-'+eachDate);
+                    }
+                }
+                function applyEventToHTMLArray(){
+                    eventHTMLArray.push(getHTMLTemplate());
+                }
+                function applyEventDateToHTMLIndexArrayMap(){
+                    for(var i=startDate;i<=endDate;i++){
+                        var eachDate = thisYearAndMonth +"-"+ formatIntegerDayToString(i);
+                        if(typeof eventDateToHTMLIndexArray[eachDate] != 'object'){
+                            eventDateToHTMLIndexArray[eachDate] = [];
+                        }
+                        eventDateToHTMLIndexArray[eachDate].push(eventCounter);
+                    }
+                }
+                function getHTMLTemplate(){
+                    return  "<div class='eventLine'>" +
+                        "<div class='eventContent'>"+
+                        "<div class='eventName'>"+name+"</div>" +
+                        "<div class='eventTime'>"+timeFrom+" ~ "+timeTo+"</div> "+
+                        "</div>"+
+                        "</div>";
+                }
+
+                function parseTimeIntoDate(time){
+                    var date = new Date();
+                    date.setFullYear(getYearByTime(time));
+                    date.setMonth(getMonthByTime(time));
+                    date.setDate(getDateByTime(time));
+                    return date;
+
+                    function getYearByTime(time){
+                        return time.substring(0,4);
+                    }
+                    function getMonthByTime(time){
+                        return parseInt(time.substring(5,7))-1;
+                    }
+                    function getDateByTime(time){
+                        return time.substring(8,10);
+                    }
+                }
+                function formatIntegerDayToString(day){
+                    if(day<10){
+                        return "0"+day;
+                    }else{
+                        return day;
+                    }
+                }
+            }
         }
-        function isResourceCorrect(resource){
-            return resource["data"]["code"]=="ok";
+
+    }
+    function initEventList(initiator){
+        var eventList;
+        if(initiator.hasOwnProperty("eventListSelector")){
+            eventList = initiator["eventListSelector"];
+        }else{
+            throw "No eventList specified";
         }
-        return resourceBank;
+        return eventList;
     }
     function initCalendar(initiator){
         var containerSelector = initiator["containerSelector"];
         var resourceBank = initiator["resourceBank"];
+        var eventListSelector = initiator["eventListSelector"];
 
-        var monthChecker = new MonthChecker();
-
-        var thisMonth = moment().format('YYYY-MM');
-        var eventArray = [
-            { startDate: thisMonth + '-10', endDate: thisMonth + '-14', title: 'Multi-Day Event' },
-            { startDate: thisMonth + '-21', endDate: thisMonth + '-23', title: 'Another Multi-Day Event' }
-        ];
-
-        $(containerSelector).clndr({
-            daysOfTheWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-            events: eventArray,
+        var calender = containerSelector.clndr({
+            daysOfTheWeek: ['日', '一', '二', '三', '四', '五', '六'],
             clickEvents: {
-                click: function(target) {
-                    console.log(getDateByTarget(target));
+                click: function(clickResult) {
+                    if(!$(clickResult.element).hasClass("adjacent-month")){
+
+                        var timeString = getTimeStringByClickResult(clickResult);
+
+                        resourceBank.getResourceByName(timeString,function(eventArrayCollection){
+
+                            var eventHTMLArray = eventArrayCollection.eventHTMLArray;
+                            var dateToHTMLIndexArrayMap = eventArrayCollection.eventDateToHTMLIndexArray;
+                            var eventsIndexArray = dateToHTMLIndexArrayMap[getDateByClickResult(clickResult)];
+
+                            if(hasEvents()){
+                                eventListSelector.html("");
+                                for(var i=0;i<eventsIndexArray.length;i++){
+                                    var eachIndex = eventsIndexArray[i];
+                                    eventListSelector.append(eventHTMLArray[eachIndex]);
+                                }
+                            }
+                            function hasEvents(){
+                                return eventsIndexArray;
+                            }
+                        })
+                    }
                 },
                 onMonthChange: function(target) {
-                    var year = getYearByTarget(target);
-                    var month = getMonthByTarget(target);
-                    var timeString = year+"-"+month;
+                    var timeString = getTimeStringByTarget(target);
                     processMonthChangeWithTimeString(timeString);
-//                    $('.calendar-day-2014-04-15').css('background-color','#000');
+                    processMonthTitleEvent();
                 }
-            },
-            multiDayEvents: {
-                startDate: 'startDate',
-                endDate: 'endDate'
             },
             showAdjacentMonths: true,
             adjacentDaysChangeMonth: false
         });
-        function MonthChecker(){
-            var checkedMonthMap = {};
-            return {
-                isMonthProcessed:function(month){
-                    return (checkedMonthMap[month]);
-                },
-                setMonthProcessed:function(month){
-                    checkedMonthMap[month] = 1;
-                }
-            }
-        }
+        return calender;
+
         function processMonthChangeWithTimeString(timeString){
-            if( ! monthChecker.isMonthProcessed(timeString)){
-                resourceBank.getResourceByName(timeString,function(resource){
-//                    processResource(resource);
-                })
-            }
-            //jump to specified month event list
-
+            resourceBank.getResourceByName(timeString,function(eventArrayCollection){
+                processEventHTML();
+                processEventSelector();
+                function processEventHTML(){
+                    eventListSelector.html(eventArrayCollection.eventHTMLArray.join(""));
+                }
+                function processEventSelector(){
+                    var nameArray = eventArrayCollection.eventSelectorNameArray;
+                    for(var i=0;i<nameArray.length;i++){
+                        $(nameArray[i]).addClass('hasEvent');
+                    }
+                }
+            })
         }
-
-        function getDateByTarget(target){
-            return target.date._i;
+        function processMonthTitleEvent(){
+            var titleSelector =  $('.month');
+            titleSelector.on(clickEventName,function(){
+                initCalendarState();
+            });
+        }
+        function getDateByClickResult(result){
+            return result.date._i;
+        }
+        function getTimeStringByClickResult(result){
+            return getDateByClickResult(result).substring(0,7);
         }
         function getMonthByTarget(target){
             var month = target.month()+1;
@@ -120,7 +258,15 @@ NCUCalendar.Calendar = function(initiator){
         function getYearByTarget(target){
             return target.year();
         }
+        function getTimeStringByTarget(target){
+            var year = getYearByTarget(target);
+            var month = getMonthByTarget(target);
+            return year+"-"+month;
+        }
     }
-
+    function initCalendarState(){
+        $('.clndr-previous-button').click();
+        $('.clndr-next-button').click();
+    }
 
 };

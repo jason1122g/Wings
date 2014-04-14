@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
     <title></title>
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densityDpi=device-dpi" />
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
     <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
     <script src="/public/resource/eventHTML/lib/underscore-min.js"></script>
     <script src="/public/resource/eventHTML/lib/clndr.js"></script>
@@ -17,62 +19,53 @@
         body{
             margin: 0;
             padding: 0;
-        }
-        .cal1{
-            background-color: #8ee275;
-            width: 100%;
-            margin: auto;
-            font-size: 50px;
-        }
-        .eventList{
-            width: 100%;
-            text-align: center;
-            margin: 30px auto;
-            color: #000000;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
     <div class="cal1"></div>
-    <div class="eventList"> testtestet</div>
+    <div id="eventList"></div>
 <script>
+
     $(document).ready(function(){
         new NCUCalendar.Calendar({
-            containerSelector:'.cal1'
+            containerSelector:'.cal1',
+            eventListSelector:'#eventList'
         });
     });
     var event = [
-        {name:"期中考",from:"20140414",to:"20140418"},
-        {name:"第2次校務會議",from:"20140422",to:"20140422"},
-        {name:"大學部宿舍抽籤",from:"20140428",to:"20140509"},
-        {name:"轉系所申請",from:"20140501",to:"20140513"},
-        {name:"教職員工健康檢查",from:"20140506",to:"20140506"},
-        {name:"研究所新生暑期借住宿舍申請",from:"20140519",to:"20140731"},
-        {name:"校慶活動日",from:"20140524",to:"20140524"},
-        {name:"暑修第一期登記",from:"20140526",to:"20140604"},
-        {name:"大學部導師輔導選課",from:"20140526",to:"20140613"},
-        {name:"學雜費減免申請",from:"20140526",to:"20140704"},
-        {name:"大學部學生提前畢業申請截止",from:"20140530",to:"20140530"},
-        {name:"端午節",from:"20140602",to:"20140602"},
-        {name:"大學部暑宿申請",from:"20140603",to:"20140609"},
-        {name:"受理全校研究生放棄103學年度住宿",from:"20140603",to:"20140630"},
-        {name:"實施線上教學評量",from:"20140606",to:"20140615"},
-        {name:"畢業典禮",from:"20140607",to:"20140607"},
-        {name:"下學期課程初選",from:"20140609",to:"20140616"},
-        {name:"第2學期休學申請截止",from:"20140613",to:"20140613"},
-        {name:"期末考",from:"20140616",to:"20140620"},
-        {name:"暑假開始",from:"20140623",to:"20140623"},
-        {name:"大學部暑宿宿舍開舍",from:"20140623",to:"20140624"},
-        {name:"102學年度第2學期大學部宿舍關舍",from:"20140623",to:"20140625"},
-        {name:"暑修第1期上課期間",from:"20140623",to:"20140801"},
-        {name:"研究生學位考試申請截止",from:"20140630",to:"20140630"},
-        {name:"協助指考工作，暫停受理學位證書領取",from:"20140701",to:"20140703"},
-        {name:"教師繳交學期成績",from:"20140704",to:"20140704"},
-        {name:"暑修第2期登記",from:"20140707",to:"20140716"},
-        {name:"學士班領取學位證書",from:"20140707",to:"20140731"},
-        {name:"研究生學位考試結束",from:"20140718",to:"20140718"},
-        {name:"研究生辦理離校手續及領取學位證書截止",from:"20140731",to:"20140731"},
-        {name:"102學年度第2學期終了",from:"20140731",to:"20140731"}
+        {name:"期中考",from:"2014-04-14",to:"2014-04-18"},
+        {name:"第2次校務會議",from:"2014-04-22",to:"2014-04-22"},
+        {name:"大學部宿舍抽籤",from:"2014-04-28",to:"2014-05-09"},
+        {name:"轉系所申請",from:"2014-05-01",to:"2014-05-13"},
+        {name:"教職員工健康檢查",from:"2014-05-06",to:"2014-05-06"},
+        {name:"研究所新生暑期借住宿舍申請",from:"2014-05-19",to:"2014-07-31"},
+        {name:"校慶活動日",from:"2014-05-24",to:"2014-05-24"},
+        {name:"暑修第一期登記",from:"2014-05-26",to:"2014-06-04"},
+        {name:"大學部導師輔導選課",from:"2014-05-26",to:"2014-06-13"},
+        {name:"學雜費減免申請",from:"2014-05-26",to:"2014-07-04"},
+        {name:"大學部學生提前畢業申請截止",from:"2014-05-30",to:"2014-05-30"},
+        {name:"端午節",from:"2014-06-02",to:"2014-06-02"},
+        {name:"大學部暑宿申請",from:"2014-06-03",to:"2014-06-09"},
+        {name:"受理全校研究生放棄103學年度住宿",from:"2014-06-03",to:"2014-06-30"},
+        {name:"實施線上教學評量",from:"2014-06-06",to:"2014-06-15"},
+        {name:"畢業典禮",from:"2014-06-07",to:"2014-06-07"},
+        {name:"下學期課程初選",from:"2014-06-09",to:"2014-06-16"},
+        {name:"第2學期休學申請截止",from:"2014-06-13",to:"2014-06-13"},
+        {name:"期末考",from:"2014-06-16",to:"2014-06-20"},
+        {name:"暑假開始",from:"2014-06-23",to:"2014-06-23"},
+        {name:"大學部暑宿宿舍開舍",from:"2014-06-23",to:"2014-06-24"},
+        {name:"102學年度第2學期大學部宿舍關舍",from:"2014-06-23",to:"2014-06-25"},
+        {name:"暑修第1期上課期間",from:"2014-06-23",to:"2014-08-01"},
+        {name:"研究生學位考試申請截止",from:"2014-06-30",to:"2014-06-30"},
+        {name:"協助指考工作，暫停受理學位證書領取",from:"2014-07-01",to:"2014-07-03"},
+        {name:"教師繳交學期成績",from:"2014-07-04",to:"2014-07-04"},
+        {name:"暑修第2期登記",from:"2014-07-07",to:"2014-07-16"},
+        {name:"學士班領取學位證書",from:"2014-07-07",to:"2014-07-31"},
+        {name:"研究生學位考試結束",from:"2014-07-18",to:"2014-07-18"},
+        {name:"研究生辦理離校手續及領取學位證書截止",from:"2014-07-31",to:"2014-07-31"},
+        {name:"102學年度第2學期終了",from:"2014-07-31",to:"2014-07-31"}
     ];
 </script>
 </body>

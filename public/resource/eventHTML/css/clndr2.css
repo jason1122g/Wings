@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 body{
-    font-family: Inconsolata, Monaco, 'Andale Mono', Courier;
+    font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
 }
 .noselect {
   -webkit-user-select: none;
@@ -16,7 +16,7 @@ body{
   	color: #FFF;
 	font-size: 1.2em;
 	text-transform: uppercase;
-	padding: 10px;
+	padding: 10px ;
 	text-align: center;
 	background: #69a776;
 	/*border-radius: 5px 5px 0 0;*/
@@ -28,12 +28,15 @@ body{
 .cal1 .clndr .clndr-controls .month {
   text-align: center;
 }
+.cal1 .clndr .clndr-controls .month:hover{
+    cursor: pointer;
+}
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button { 
   position:absolute;
-  right:10px;
-  top:19px;
-  width:30px;
-  height:30px;
+  right:0px;
+  top:0px;
+  width:65px;
+  height:65px;
   text-indent: -4000px;
   background: url(../images/arrow-right.png) no-repeat 0px;
   cursor: pointer;
@@ -49,10 +52,10 @@ body{
 }
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button { 
    position:absolute;
-   left:10px;
-   top:19px;
-   width:30px;
-   height:30px;
+   left:0px;
+   top:0px;
+   width:65px;
+   height:65px;
   text-indent: -4000px;
   background: url(../images/arrow-left.png) no-repeat 0px;
   cursor: pointer;
@@ -70,6 +73,8 @@ body{
   table-layout: fixed;
   width:100%;
   margin:0 0;
+    padding-left: 0px;
+    padding-right: 0px;
   padding-bottom: 30px;
 }
 .cal1 .clndr .clndr-table .header-days {
@@ -94,22 +99,23 @@ body{
   vertical-align:middle;
 }
 .cal1 .clndr .clndr-table tr .day:hover{
-    color: #69a776;
+    color: #292927;
 }
 .cal1 .clndr .clndr-table tr .day.today {
+    border: 3px solid #000;
   	/*background: #EC3D68;*/
-	 color: #FFF;
+	 /*color: #FFF;*/
 	 /*border-radius: 2em;*/
 	/*-webkit-border-radius: 2em;*/
 	/*-moz-border-radius: 2em;*/
 	/*-o-border-radius: 2em;*/
 }
 .cal1 .clndr .clndr-table tr .day.today:hover {
-  	color: #FFF;
+  	/*color: #bac;*/
 }
 .cal1 .clndr .clndr-table tr .day.today.event {
-     background: #FF6F58;
-	 color: #FFF;
+
+	 /*color: #FFF;*/
 	 /*border-radius: 2em;*/
 	/*-webkit-border-radius: 2em;*/
 	/*-moz-border-radius: 2em;*/
@@ -130,11 +136,69 @@ body{
   height: inherit;
   color: rgba(255, 255, 255, 0.53);
 }
+.cal1 .clndr .clndr-table tr .adjacent-month:hover{
+    color: rgba(255, 255, 255, 0.53);
+}
+.cal1 .hasEvent{
+    background-color: #9f7c4c;
+}
+
 @media all and (max-width:320px) {
-	.cal1 .clndr .clndr-table{
-		width:90%;
-	}
 	.cal1 .clndr .clndr-table tr {
 		height: 35px;
 	}
+}
+
+.cal1{
+    background-color: #8ee275;
+    width: 100%;
+    margin: auto;
+    font-size: 50px;
+}
+#eventList{
+    width: 100%;
+    /*height: 350px;*/
+    /*overflow-y: auto;*/
+    text-align: center;
+    margin: 0px auto;
+    color: #353535;
+}
+.eventLine{
+    margin-top: 10px;
+}
+.eventContent{
+    text-align: center;
+    color: #292927;
+}
+.eventName{
+    font-size: 40px;
+    background-color: #5c9aa6;
+    float: none;
+    width: 100%;
+}
+.eventTime{
+    font-size: 28px;
+    background-color: #90cbdd;
+}
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (   min--moz-device-pixel-ratio: 1.5),
+only screen and (     -o-min-device-pixel-ratio: 3/2),
+only screen and (        min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.33dppx) {
+    .cal1{
+        font-size: 40px;
+    }
+    .eventName{
+        font-size: 30px;
+    }
+    .eventTime{
+        font-size: 20px;
+    }
+    .cal1 .clndr .clndr-controls  {
+        font-size: 1em;
+    }
+    #eventList{
+        height: 200px;
+    }
 }
