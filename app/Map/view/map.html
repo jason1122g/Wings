@@ -46,13 +46,15 @@
         $(document).ready(function(){
             var map = new NCUMap.Map({
                 container:'NCUMapContainer',
-                gpsEnable:false,
+                codeServerURL:"https://appforncu.appspot.com/getmap",
                 coderEnable:true,
-                selecterEnable:true
+                settingEnable:true,
+                selecterEnable:true,
+                gpsEnable:true
             });
-            var mapMarkerEditor = new NCUMap.MarkerEditor({
-                map: map
-            });
+//            var mapMarkerEditor = new NCUMap.MarkerEditor({
+//                map: map
+//            });
             map.addCustomLayerByIDs(["b259a2dd006bed410e452dbf1c1e170f","b5fda47671d8ce254eff5486d544ebd8"]);
         });
     </script>

@@ -133,7 +133,7 @@ NCUMap.MarkerEditor = function(init){
 
             $('#markersEditorSaveBtn').attr('disabled',true);
             $('#markerLayerNameModal').modal('hide');
-            $.post("http://appforncu.appspot.com/getmap",{type:"create",data:JSON.stringify(markerGroupGeoJSON)},
+            $.post("https://appforncu.appspot.com/getmap",{type:"create",data:JSON.stringify(markerGroupGeoJSON)},
                 function(data){
 //                    console.log(data);
                     data = JSON.parse(data);

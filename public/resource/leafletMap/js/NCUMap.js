@@ -3,8 +3,12 @@ NCUMap.Map = function(init){
     var thisPtr = NCUMap.Map;
     var container = init["container"];
     var gpsEnable = init["gpsEnable"];
+    var settingEnable = init["settingEnable"];
     var coderEnable = init["coderEnable"];
     var selecterEnable = init["selecterEnable"];
+    var codeServerURL = init["codeServerURL"];
+    var markerEvent = init["markerEvent"];
+
 
     var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
     var locationNameToLatlng  = {};
@@ -89,6 +93,9 @@ NCUMap.Map = function(init){
                     layerIdToRefernce[layername] = null;
                     $('#'+layername).remove();
                 });
+                if(!settingEnable){
+                    $('#nculayercontrol').hide();
+                }
             }
         }
         function initSelector(){
@@ -216,7 +223,7 @@ NCUMap.Map = function(init){
             layerCodeInput.attr('disabled', 'disabled');
             $.ajax({
                 type:'POST',
-                url:"https://appforncu.appspot.com/getmap",
+                url:codeServerURL,
                 data:{type:"read",data:layerId},
                 dataType:"text",
                 success:function(textData){
@@ -240,7 +247,7 @@ NCUMap.Map = function(init){
                     "<div class='input-group' id='"+layerid+"'>" +
                         "<label class='input-group-addon nculayercheckbox fa fa-check-circle-o fa-2x btn btn-default' data-checked='true'>" +
                         "</label>" +
-                        "<span  class='form-control' >"+r.name+"</span>" +
+                        "<span  class='form-control' >"+(r.name? r.name :"")+"</span>" +
                         "<span class='input-group-addon btn btn-default nculayerdelete'>" +
                         "<i class='fa fa-times'></i>" +
                         "</span></div>");
@@ -259,20 +266,32 @@ NCUMap.Map = function(init){
     function parseFeatureToMarker(feature){
         var prop = feature.properties;
         var geo = feature.geometry.coordinates;
-        var htmlContent = "";
-        if(prop["img"])
-            htmlContent+="<img src='"+prop["img"]+"'>";
-        if(prop["title"]){
-            if(prop["link"]){
-                htmlContent+="<a href='"+prop["link"]+"'>"+prop["title"]+"</a>";
-            }else{
-                htmlContent+=prop["title"];
-            }
-        }
-        htmlContent+="  <span>人氣度"+prop.number+"</span>";
-        return L.marker(L.latLng(geo[1],geo[0]),{
+
+        var marker = L.marker(L.latLng(geo[1],geo[0]),{
             icon: L.AwesomeMarkers.icon(prop.icon)
-        }).bindPopup(htmlContent);
+        }).bindPopup(fetchDataIntoHTML());
+        if(markerEvent){
+            marker.on(clickEventName,function(){
+                markerEvent(prop);
+            });
+        }
+        return marker;
+        function fetchDataIntoHTML(){
+            var htmlContent = "";
+            if(prop["img"])
+                htmlContent+="<img src='"+prop["img"]+"'>";
+            if(prop["title"]){
+                if(prop["link"]){
+                    htmlContent+="<a href='"+prop["link"]+"'>"+prop["title"]+"</a>";
+                }else{
+                    htmlContent+=prop["title"];
+                }
+            }
+            if(prop["number"]&&prop["number"]!=0){
+                htmlContent+="  <span>人氣度"+prop.number+"</span>";
+            }
+            return htmlContent;
+        }
     }
 
     thisPtr.prototype.addCustomLayerByIDs=function(ids){

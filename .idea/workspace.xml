@@ -23,53 +23,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Map/view/event.html">
+      <file leaf-file-name="traffic.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="6" selection-start="944" selection-end="944" vertical-scroll-proportion="-7.172414" vertical-offset="292" max-vertical-offset="1540">
+            <state line="21" column="9" selection-start="616" selection-end="616" vertical-scroll-proportion="-14.4827585" vertical-offset="0" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clndr2.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Map/view/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="19" selection-start="3714" selection-end="3741" vertical-scroll-proportion="0.5461913" vertical-offset="2843" max-vertical-offset="4180">
+            <state line="42" column="6" selection-start="1916" selection-end="1916" vertical-scroll-proportion="-18.896551" vertical-offset="292" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js">
+      <file leaf-file-name="NCUMap.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="272" column="0" selection-start="11173" selection-end="11173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+            <state line="280" column="27" selection-start="24521" selection-end="24521" vertical-scroll-proportion="0.0" vertical-offset="579" max-vertical-offset="1460">
               <folding>
-                <element signature="e#359#721#0" expanded="false" />
-                <element signature="e#767#1039#0" expanded="false" />
-                <element signature="e#1071#7195#0" expanded="false" />
-                <element signature="e#1256#2384#0" expanded="false" />
-                <element signature="e#3786#4877#0" expanded="false" />
-                <element signature="e#4423#4558#0" expanded="false" />
-                <element signature="e#4612#4709#0" expanded="false" />
-                <element signature="e#4764#4859#0" expanded="false" />
-                <element signature="e#4934#5203#0" expanded="false" />
-                <element signature="e#5252#5331#0" expanded="false" />
-                <element signature="e#5884#6230#0" expanded="false" />
-                <element signature="e#6280#6933#0" expanded="false" />
-                <element signature="e#6988#7164#0" expanded="false" />
-                <element signature="e#7233#7473#0" expanded="false" />
-                <element signature="e#7510#11042#0" expanded="false" />
-                <element signature="e#7880#9055#0" expanded="false" />
-                <element signature="e#8900#8988#0" expanded="false" />
-                <element signature="e#9500#10130#0" expanded="false" />
-                <element signature="e#10384#10430#0" expanded="false" />
-                <element signature="e#10482#10557#0" expanded="false" />
-                <element signature="e#10599#10759#0" expanded="false" />
-                <element signature="e#10800#10845#0" expanded="false" />
-                <element signature="e#10892#11036#0" expanded="false" />
-                <element signature="e#11075#11168#0" expanded="false" />
+                <element signature="e#794#1356#0" expanded="false" />
+                <element signature="e#1387#21399#0" expanded="false" />
+                <element signature="e#1486#4350#0" expanded="false" />
+                <element signature="e#1599#2100#0" expanded="false" />
+                <element signature="e#2133#2918#0" expanded="false" />
+                <element signature="e#2951#4340#0" expanded="false" />
+                <element signature="e#4382#18566#0" expanded="false" />
+                <element signature="e#18600#21393#0" expanded="false" />
+                <element signature="e#21436#21490#0" expanded="false" />
+                <element signature="e#21539#21607#0" expanded="false" />
+                <element signature="e#21649#22248#0" expanded="false" />
+                <element signature="e#22283#22782#0" expanded="false" />
+                <element signature="e#22826#23772#0" expanded="false" />
+                <element signature="e#23813#23981#0" expanded="false" />
+                <element signature="e#25070#25160#0" expanded="false" />
+                <element signature="e#25212#25256#0" expanded="false" />
+                <element signature="e#25313#25356#0" expanded="false" />
+                <element signature="e#25414#26121#0" expanded="false" />
+                <element signature="e#26169#26204#0" expanded="false" />
+                <element signature="e#26253#26430#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NCUMapMarkerEditor.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMapMarkerEditor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="64" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.5629139" vertical-offset="840" max-vertical-offset="3460">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NCUTraffic.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="1" selection-start="4378" selection-end="4378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding>
+                <element signature="e#72#3407#0" expanded="false" />
+                <element signature="e#3531#4376#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,10 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/script/ncumap/MapAdapter" />
-        <option value="$PROJECT_DIR$/public/script/ncumap/coordinater.js" />
-        <option value="$PROJECT_DIR$/public/script/ncumap/Coordinater.js" />
-        <option value="$PROJECT_DIR$/public/script/ncumap/ncumap.js" />
         <option value="$PROJECT_DIR$/public/script/ncumap/JMap.js" />
         <option value="$PROJECT_DIR$/public/style/jquery-jvectormap-1.2.2.css" />
         <option value="$PROJECT_DIR$/server/nodeJS/server.js" />
@@ -109,7 +122,6 @@
         <option value="$PROJECT_DIR$/public/style/leaflet.css" />
         <option value="$PROJECT_DIR$/public/style/ncumap.css" />
         <option value="$PROJECT_DIR$/public/script/tool/Parser.js" />
-        <option value="$PROJECT_DIR$/app/Map/view/map.html" />
         <option value="$PROJECT_DIR$/public/script/ncumap/main.manifest" />
         <option value="$PROJECT_DIR$/public/script/ncumap/NCUMapMarkerEditor.js" />
         <option value="$PROJECT_DIR$/server/nodeJS/tool/Pather.js" />
@@ -132,10 +144,15 @@
         <option value="$PROJECT_DIR$/public/resource/eventHTML/css/full-clndr.less" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/css/clndr.less" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/lib/clndr.js" />
-        <option value="$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js" />
-        <option value="$PROJECT_DIR$/app/Map/view/event.html" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css" />
+        <option value="$PROJECT_DIR$/app/Map/view/event.html" />
+        <option value="$PROJECT_DIR$/public/resource/trafficHTML/js/BusTimeParser.js" />
+        <option value="$PROJECT_DIR$/public/resource/leafletMap/js/NCUMapMarkerEditor.js" />
+        <option value="$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js" />
+        <option value="$PROJECT_DIR$/app/Map/view/map.html" />
+        <option value="$PROJECT_DIR$/app/Map/view/traffic.html" />
+        <option value="$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js" />
       </list>
     </option>
   </component>
@@ -331,7 +348,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="leafletMap" />
+              <option name="myItemId" value="trafficHTML" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -357,107 +374,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="leafletMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventHTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventHTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventHTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventHTML" />
+              <option name="myItemId" value="trafficHTML" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leafletMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leafletMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,16 +499,16 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;==&#10;=&#10;I" />
+    <property name="SearchEverywhereHistory" value="id&#10;==&#10;=&#10;I" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\trafficHTML\js" />
+      <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\trafficHTML\css" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\eventHTML\css" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\vender\jquery" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\script" />
-      <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\script\test" />
-      <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\script\ncumap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\eventHTML\lib" />
@@ -672,28 +659,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/vender/select2/css/select2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="264" selection-end="264" vertical-scroll-proportion="0.42414355" vertical-offset="0" max-vertical-offset="13040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vender/select2/js/select2_locale_zh-TW.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vender/select2/js/select2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="613">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vender/select2/css/select2-bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="664" selection-end="664" vertical-scroll-proportion="0.685155" vertical-offset="0" max-vertical-offset="9240" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/leaflet.label.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.22364217" vertical-offset="0" max-vertical-offset="1200" />
@@ -748,7 +713,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/ncumap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.84051037" vertical-offset="353" max-vertical-offset="1000" />
+        <state line="44" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.84051037" vertical-offset="353" max-vertical-offset="1000">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/script/tool/Parser.js">
@@ -783,11 +750,6 @@
         <state line="7" column="37" selection-start="302" selection-end="302" vertical-scroll-proportion="0.22950819" vertical-offset="0" max-vertical-offset="610" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="56" selection-end="56" vertical-scroll-proportion="-1.862069" vertical-offset="6" max-vertical-offset="960" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/nodeJS/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="26" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
@@ -810,21 +772,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMapMarkerEditor.js">
+    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/leaflet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="3460">
+        <state line="385" column="16" selection-start="7731" selection-end="7731" vertical-scroll-proportion="12.35955" vertical-offset="0" max-vertical-offset="9680">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/leaflet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="385" column="16" selection-start="7731" selection-end="7731" vertical-scroll-proportion="12.35955" vertical-offset="0" max-vertical-offset="9680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/leaflet.draw.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="532" selection-end="532" vertical-scroll-proportion="0.70947033" vertical-offset="58" max-vertical-offset="7040" />
+        <state line="25" column="52" selection-start="532" selection-end="532" vertical-scroll-proportion="0.70947033" vertical-offset="58" max-vertical-offset="7040">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/image/layers-2x.png">
@@ -873,21 +832,9 @@
         <state line="10" column="30" selection-start="365" selection-end="365" vertical-scroll-proportion="0.32051283" vertical-offset="0" max-vertical-offset="640" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="0.23529412" vertical-offset="0" max-vertical-offset="595" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/lib/underscore-min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="42" selection-start="14361" selection-end="14361" vertical-scroll-proportion="0.06546645" vertical-offset="0" max-vertical-offset="611" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="13" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.7462185" vertical-offset="696" max-vertical-offset="1320">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/nodeJS/tool/PathHandler.js">
@@ -939,42 +886,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="39" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.5923719" vertical-offset="123" max-vertical-offset="1640">
-          <folding>
-            <element signature="e#656#1218#0" expanded="false" />
-            <element signature="e#1461#1962#0" expanded="false" />
-            <element signature="e#1995#2780#0" expanded="false" />
-            <element signature="e#4140#18324#0" expanded="false" />
-            <element signature="e#18358#21151#0" expanded="false" />
-            <element signature="e#21194#21248#0" expanded="false" />
-            <element signature="e#21297#21365#0" expanded="false" />
-            <element signature="e#21407#22006#0" expanded="false" />
-            <element signature="e#22041#22565#0" expanded="false" />
-            <element signature="e#22609#23541#0" expanded="false" />
-            <element signature="e#23582#23750#0" expanded="false" />
-            <element signature="e#23793#24416#0" expanded="false" />
-            <element signature="e#24473#24563#0" expanded="false" />
-            <element signature="e#24615#24659#0" expanded="false" />
-            <element signature="e#24716#24759#0" expanded="false" />
-            <element signature="e#24817#25524#0" expanded="false" />
-            <element signature="e#25572#25607#0" expanded="false" />
-            <element signature="e#25656#25833#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/images/arrow-left.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="944" selection-end="944" vertical-scroll-proportion="-7.172414" vertical-offset="292" max-vertical-offset="1540">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js">
@@ -1011,7 +925,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="19" selection-start="3714" selection-end="3741" vertical-scroll-proportion="0.5461913" vertical-offset="2843" max-vertical-offset="4180">
+        <state line="189" column="24" selection-start="4384" selection-end="4384" vertical-scroll-proportion="0.0" vertical-offset="3563" max-vertical-offset="4180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="937" selection-end="937" vertical-scroll-proportion="-5.793103" vertical-offset="312" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/BusTimeParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="1" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/jquery.nouislider.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/jquery.nouislider.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.03311258" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="1" selection-start="4378" selection-end="4378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding>
+            <element signature="e#72#3407#0" expanded="false" />
+            <element signature="e#3531#4376#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="616" selection-end="616" vertical-scroll-proportion="-14.4827585" vertical-offset="0" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="6" selection-start="1916" selection-end="1916" vertical-scroll-proportion="-18.896551" vertical-offset="292" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="280" column="27" selection-start="24521" selection-end="24521" vertical-scroll-proportion="0.0" vertical-offset="579" max-vertical-offset="1460">
+          <folding>
+            <element signature="e#794#1356#0" expanded="false" />
+            <element signature="e#1387#21399#0" expanded="false" />
+            <element signature="e#1486#4350#0" expanded="false" />
+            <element signature="e#1599#2100#0" expanded="false" />
+            <element signature="e#2133#2918#0" expanded="false" />
+            <element signature="e#2951#4340#0" expanded="false" />
+            <element signature="e#4382#18566#0" expanded="false" />
+            <element signature="e#18600#21393#0" expanded="false" />
+            <element signature="e#21436#21490#0" expanded="false" />
+            <element signature="e#21539#21607#0" expanded="false" />
+            <element signature="e#21649#22248#0" expanded="false" />
+            <element signature="e#22283#22782#0" expanded="false" />
+            <element signature="e#22826#23772#0" expanded="false" />
+            <element signature="e#23813#23981#0" expanded="false" />
+            <element signature="e#25070#25160#0" expanded="false" />
+            <element signature="e#25212#25256#0" expanded="false" />
+            <element signature="e#25313#25356#0" expanded="false" />
+            <element signature="e#25414#26121#0" expanded="false" />
+            <element signature="e#26169#26204#0" expanded="false" />
+            <element signature="e#26253#26430#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMapMarkerEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="64" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.5629139" vertical-offset="840" max-vertical-offset="3460">
           <folding />
         </state>
       </provider>
