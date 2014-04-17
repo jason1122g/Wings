@@ -2,9 +2,13 @@ var ModuleController = function(){
 
 };
 
-//can load func with specified module scope
-//can create module under the scope of specified module scope
-//can export specified function
+//can manage namespace
+//can export specified module
 //can import specified module scope
-//can provide extend function
-//can expand module scope by extend others
+//can use 'this' correctly in any module scope
+//can expand module scope by extend others or empty module
+
+
+
+
+//can provide extend function to extend one to another

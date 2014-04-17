@@ -11,9 +11,36 @@
             background-color: #8f8f87;
         }
         #container{
-            width: 200px;
+            width: 100%;
             height: 100%;
             border: 2px dashed #fff;
+        }
+        .sideImage{
+            width: 50px;
+            height: 50px;
+        }
+        .sideInfo{
+            background-color: #43a4cb;
+            padding: 10px;
+            color: #fff;
+            height:  50px;
+            line-height: 50px;
+            vertical-align: middle;
+            border: 1px solid rgba(255, 255, 255, 0.47);
+        }
+        .sideProfileBlock{
+            display: inline-block;
+            position: relative;
+            bottom: 0px;
+            left: 10px;
+        }
+        .sideProfileName{
+            font-size: 30px;
+            line-height: 20%;
+        }
+        .sideprofilenumber{
+            font-size:  10px;
+            line-height: 80%;
         }
         .sideRow{
             background-color: #337291;
@@ -21,9 +48,13 @@
             color: #fff;
             height:  30px;
             line-height: 30px;
-            vertical-align: middle;
             font-size: 30px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+            vertical-align: middle;
+            border: 1px solid rgba(255, 255, 255, 0.47);
+        }
+        .sideHorizon{
+            background-color: #838379;
+            height: 5px;
         }
         .sideRow:hover{
             background-color: rgba(198, 173, 202, 0.65);
@@ -41,10 +72,19 @@
 </head>
 <body>
     <div id="container">
+        <div class="sideInfo">
+            <img class="sideImage" src="/public/image/gay.png">
+            <div class="sideProfileBlock">
+                <div class="sideProfileName">JackGay</div>
+                <div class="sideProfileNumber">CSIE2B-101502550</div>
+            </div>
+        </div>
+        <div class="sideHorizon"></div>
         <div class="sideRow"><i class="sideIcon fa fa-home"></i>     <span class="sideText">HOME   </span></div>
         <div class="sideRow"><i class="sideIcon fa fa-tasks"></i>    <span class="sideText">INFO   </span></div>
         <div class="sideRow"><i class="sideIcon fa fa-list-alt"></i> <span class="sideText">SCORE  </span></div>
         <div class="sideRow"><i class="sideIcon fa fa-book"></i>     <span class="sideText">COURSE </span></div>
+        <div class="sideHorizon"></div>
         <div class="sideRow"><i class="sideIcon fa fa-upload"></i>   <span class="sideText">INCLUDE</span></div>
         <div class="sideRow"><i class="sideIcon fa fa-sign-in"></i>  <span class="sideText">LOGIN  </span></div>
     </div>
