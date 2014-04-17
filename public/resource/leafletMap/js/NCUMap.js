@@ -2,12 +2,15 @@ var NCUMap = {};
 NCUMap.Map = function(init){
     var thisPtr = NCUMap.Map;
     var container = init["container"];
-    var gpsEnable = init["gpsEnable"];
-    var settingEnable = init["settingEnable"];
-    var coderEnable = init["coderEnable"];
-    var selecterEnable = init["selecterEnable"];
     var codeServerURL = init["codeServerURL"];
-    var markerEvent = init["markerEvent"];
+    if(init["customMap"]){
+        var mapInitiator = init["customMap"]["mapInitiator"];
+        var gpsEnable = init["customMap"]["gpsEnable"];
+        var settingEnable = init["customMap"]["settingEnable"];
+        var coderEnable = init["customMap"]["coderEnable"];
+        var selecterEnable = init["customMap"]["selecterEnable"];
+    }
+    var customMarker = init["customMarker"];
 
 
     var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
@@ -15,17 +18,21 @@ NCUMap.Map = function(init){
     var layerIdToRefernce = {};
     var layerCodeInput;   //jquery selector(input/text)
     var layerDivGroup;    //jquery selector(div/checkbox,delete,label)
+
+
     var map = initMap();
     initControllers();
 
     function initMap(){
-        var map = L.map(container,{
+        var mapOriginInitiator = {
             minZoom:16,
             maxZoom:18,
             maxBounds: L.latLngBounds(L.latLng(24.962752, 121.200285), L.latLng(24.974560, 121.183312)),
             zoomControl:false,
             attributionControl:true
-        }).setView([24.968282,121.192511],16);
+        };
+        overrideAPropertiesToBWithJSON(mapInitiator(),mapOriginInitiator);
+        var map = L.map(container,mapOriginInitiator).setView([24.968282,121.192511],16);
         map.doubleClickZoom.disable();
         L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -241,7 +248,7 @@ NCUMap.Map = function(init){
             alert("無此圖層");
         }else{
             try{
-                layerIdToRefernce[layerid]=processLayerGroup(r);
+                layerIdToRefernce[layerid]=processLayerGroupWithDataAndID(r,layerid);
                 map.addLayer(layerIdToRefernce[layerid]);
                 layerDivGroup.append(
                     "<div class='input-group' id='"+layerid+"'>" +
@@ -256,41 +263,57 @@ NCUMap.Map = function(init){
             }
         }
     }
-    function processLayerGroup(jsonData){
+    function processLayerGroupWithDataAndID(jsonData,layerId){
         return L.geoJson(jsonData,{
             pointToLayer: function(feature){
+                feature.properties.layerId = layerId;
                 return parseFeatureToMarker(feature);
             }
         });
     }
     function parseFeatureToMarker(feature){
+
         var prop = feature.properties;
         var geo = feature.geometry.coordinates;
 
-        var marker = L.marker(L.latLng(geo[1],geo[0]),{
-            icon: L.AwesomeMarkers.icon(prop.icon)
-        }).bindPopup(fetchDataIntoHTML());
-        if(markerEvent){
-            marker.on(clickEventName,function(){
-                markerEvent(prop);
-            });
+        var markerOriginInitiator = {icon :L.AwesomeMarkers.icon(prop.icon)};
+        var marker = L.marker(L.latLng(geo[1],geo[0]),markerOriginInitiator).bindPopup(fetchDataIntoHTML(prop));
+
+        var newMarker = customMarker({
+            markerInstance:marker,
+            initiator:markerOriginInitiator,
+            properties:prop
+        });
+
+        if(newMarker){
+            marker = newMarker;
         }
+
         return marker;
-        function fetchDataIntoHTML(){
+
+        function fetchDataIntoHTML(properties){
             var htmlContent = "";
-            if(prop["img"])
-                htmlContent+="<img src='"+prop["img"]+"'>";
-            if(prop["title"]){
-                if(prop["link"]){
-                    htmlContent+="<a href='"+prop["link"]+"'>"+prop["title"]+"</a>";
+            if(properties["img"])
+                htmlContent+="<img class='markerImage' src='"+properties["img"]+"'>";
+            if(properties["title"]){
+                var markerTitle = "<div class='markerTitle'>"+properties["title"]+"</div>";
+                if(properties["link"]){
+                    htmlContent+="<a class='markerLink' href='"+properties["link"]+"'>"+markerTitle+"</a>";
                 }else{
-                    htmlContent+=prop["title"];
+                    htmlContent+=markerTitle;
                 }
             }
-            if(prop["number"]&&prop["number"]!=0){
-                htmlContent+="  <span>人氣度"+prop.number+"</span>";
+            if(properties["number"]&&properties["number"]!=0){
+                htmlContent+="  <span class='markerCount'>人氣度"+properties.number+"</span>";
             }
             return htmlContent;
+        }
+    }
+    function overrideAPropertiesToBWithJSON(json1,json2){
+        for(var attr in json1){
+            if(json1.hasOwnProperty(attr)){
+                json2[attr] = json1[attr];
+            }
         }
     }
 

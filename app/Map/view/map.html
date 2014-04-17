@@ -44,13 +44,27 @@
     <div id="NCUMapContainer"></div>
     <script>
         $(document).ready(function(){
+
+            var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
+
             var map = new NCUMap.Map({
                 container:'NCUMapContainer',
                 codeServerURL:"https://appforncu.appspot.com/getmap",
-                coderEnable:true,
-                settingEnable:true,
-                selecterEnable:true,
-                gpsEnable:true
+                customMap:{
+                    mapInitiator:function(){
+                        //return the initiator
+                    },
+                    coderEnable:false,
+                    settingEnable:true,
+                    selecterEnable:true,
+                    gpsEnable:false
+                },
+                customMarker:function (origin){
+                    var marker = origin.markerInstance,
+                        initiator = origin.initiator,
+                        properties = origin.properties;
+                    return marker;
+                }
             });
 //            var mapMarkerEditor = new NCUMap.MarkerEditor({
 //                map: map

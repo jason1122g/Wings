@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/public/resource/leafletMap/css/font-awesome-4.0.3/css/font-awesome.min.css" />
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
+        @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+        body{
+            font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
+            background-color: #8f8f87;
+        }
+        #container{
+            width: 200px;
+            height: 100%;
+            border: 2px dashed #fff;
+        }
+        .sideRow{
+            background-color: #337291;
+            padding: 10px;
+            color: #fff;
+            height:  30px;
+            line-height: 30px;
+            vertical-align: middle;
+            font-size: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+        }
+        .sideRow:hover{
+            background-color: rgba(198, 173, 202, 0.65);
+            cursor: pointer;
+        }
+        .sideIcon{
+            color: #fff;
+            margin: 0 10px;
+            width: 30px;
+        }
+        .sideText{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="sideRow"><i class="sideIcon fa fa-home"></i>     <span class="sideText">HOME   </span></div>
+        <div class="sideRow"><i class="sideIcon fa fa-tasks"></i>    <span class="sideText">INFO   </span></div>
+        <div class="sideRow"><i class="sideIcon fa fa-list-alt"></i> <span class="sideText">SCORE  </span></div>
+        <div class="sideRow"><i class="sideIcon fa fa-book"></i>     <span class="sideText">COURSE </span></div>
+        <div class="sideRow"><i class="sideIcon fa fa-upload"></i>   <span class="sideText">INCLUDE</span></div>
+        <div class="sideRow"><i class="sideIcon fa fa-sign-in"></i>  <span class="sideText">LOGIN  </span></div>
+    </div>
+
+</body>
+</html>

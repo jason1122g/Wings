@@ -11,54 +11,46 @@
 
 
     <style>
+        @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
+        @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
         body{
-            /*background-color: #101010;*/
+            font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
+        }
+        #sliderContainer{
+            width: 100%;
+            text-align: center;
+        }
+        #sliderContainer:after{
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
         }
         #timeSlider{
-            margin-top: 100px;
-            margin-left: 100px;
-            text-align: center;
-            width: 500px;
+            float: left;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 80%;
+        }
+        .timeSliderLabel{
+            color: #eeeeee;
+            background-color: #8f8f87;
+            float: left;
+            margin: auto 1%;
+            height: 25px;
+            line-height: 25px;
+            width: 8%;
         }
     </style>
 </head>
 <body>
-    <div id="timeSlider"></div>
-    <div id="timeSliderLowerLabel"></div>
-    <div id="timeSliderUpperLabel"></div>
+    <div style="height: 200px;"></div>
+    <div id="sliderContainer"></div>
+
     <script>
         $(document).ready(function(){
-            var Link = $.noUiSlider.Link;
-            var changeFunc = function(val){
-                var valueToTime = {
-                    0:"04:00",
-                    10:"06:00",
-                    20:"08:00",
-                    30:"10:00",
-                    40:"12:00",
-                    50:"14:00",
-                    60:"16:00",
-                    70:"18:00",
-                    80:"20:00",
-                    90:"22:00",
-                    100:"24:00"
-                };
-                var result = valueToTime[parseInt(val)];
-                console.log(result);
-            };
-            var slider = $('#timeSlider');
-            slider.noUiSlider({
-                start: [0, 100],
-                step: 10,
-                connect:true,
-                range:{
-                    'min':0,
-                    'max':100
-                },
-                serialization:{
-                    lower:[new Link({target:changeFunc})],
-                    upper:[new Link({target:changeFunc})]
-                }
+            new NCUTraffic.Bus({
+                sliderContainer:'#sliderContainer'
             });
         });
     </script>

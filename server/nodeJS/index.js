@@ -12,7 +12,8 @@ pathHandler.addRoutePaths({
     "map.html":viewPath+"/map.html",
     "attackDB.html":viewPath+"/attackDB.html",
     "traffic.html":viewPath+"/traffic.html",
-    "event.html":viewPath+"/event.html"
+    "event.html":viewPath+"/event.html",
+    "leftSide.html":viewPath+"/leftSide.html"
 });
 pathHandler.addSpecialHandler({
 //    "/":particularHandlers.start

@@ -83,11 +83,74 @@ NCUTraffic.Bus = function(init){
         {n:1,a:"22:10",b:"22:30",t:1},
         {n:2,a:"14:05",b:"14:30",t:2}
     ];//桃132:1,中133:2,中172:3,每日1,一到五2,六日3
+    var sliderContainer = init["sliderContainer"];
+
+    var timeTransformer = new function(){
+        var valueToTime = {
+            0:"04:00",
+            10:"06:00",
+            20:"08:00",
+            30:"10:00",
+            40:"12:00",
+            50:"14:00",
+            60:"16:00",
+            70:"18:00",
+            80:"20:00",
+            90:"22:00",
+            100:"24:00"
+        };
+      return {
+          transformValueToTime:function(value){
+            return valueToTime[value];
+          }
+      }
+    };
+
+    var timeSliderID = "timeSlider",
+        timeSliderLowerLabelID = "timeSliderLowerLabel",
+        timeSliderUpperLabelID = "timeSliderUpperLabel",
+        timeSliderLabelClass = "timeSliderLabel",
+        sliderHTML =
+        '<div id="'+timeSliderLowerLabelID+'" class="'+timeSliderLabelClass+'"></div>' +
+        '<div id="'+timeSliderID+'"></div>' +
+        '<div id="'+timeSliderUpperLabelID+'" class="'+timeSliderLabelClass+'"></div>';
+
+
+    initSlider();
+
+    function initSlider(){
+
+        var transformTargetValueToTime = function(val){
+            $(this).text(timeTransformer.transformValueToTime(parseInt(val)));
+        };
+
+        $(sliderContainer).html(sliderHTML);
+        $('#'+timeSliderID).noUiSlider({
+            start: [0, 100],
+            step: 10,
+            connect:true,
+            range:{
+                'min':0,
+                'max':100
+            },
+            serialization:{
+                lower:[new $.noUiSlider.Link({
+                    target:$('#'+timeSliderLowerLabelID),
+                    method:transformTargetValueToTime
+                })],
+                upper:[new $.noUiSlider.Link({
+                    target:$('#'+timeSliderUpperLabelID),
+                    method:transformTargetValueToTime
+                })]
+            }
+        });
+
+    }
 
 
     NCUTraffic.Bus.prototype.getByTimeBeginEndDays = function(timebegin,timeend,days){
         var timeArray=[],element;
-        var daysArray=[0,0,0,0], i,j;
+        var daysArray=[0,0,0,0], i;
         for(i=0;i<days.length;i++){
             switch (days[i]){
                 case "1":daysArray[1]=1;daysArray[2]=1;break;
@@ -107,4 +170,4 @@ NCUTraffic.Bus = function(init){
         }
         return timeArray;
     }
-}
+};
