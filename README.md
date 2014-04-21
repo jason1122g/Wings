@@ -9,3 +9,8 @@
 - 全域涵式庫(JQuery,Bootstrap...)放置於/public/vende
 - 全域工具庫(Parser,StringFormat)放置於/public/script/tool
 
+> ### Server 更改Router方式
+1. 打開/server/nodeJS/index
+2. 加入validPaths/routePath
+3. 重啟動server
+
