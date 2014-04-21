@@ -1,5 +1,9 @@
 var ModuleController = function(){
 
+    var newObj={};
+    var oldObj={};
+    newObj.extend(oldObj);
+
 };
 
 //can manage namespace
@@ -7,7 +11,6 @@ var ModuleController = function(){
 //can import specified module scope
 //can use 'this' correctly in any module scope
 //can expand module scope by extend others or empty module
-
 
 
 

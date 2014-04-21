@@ -23,48 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="traffic.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="traffic.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="405" selection-end="654" vertical-scroll-proportion="-11.724138" vertical-offset="0" max-vertical-offset="1280">
+            <state line="13" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.45217392" vertical-offset="0" max-vertical-offset="1360">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NCUTraffic.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="3495" selection-end="3495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1120">
-              <folding>
-                <element signature="e#72#3407#0" expanded="false" />
-                <element signature="e#3536#3967#0" expanded="false" />
-                <element signature="e#5367#6210#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NCUMap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="312" column="31" selection-start="25834" selection-end="25834" vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="2160">
-              <folding>
-                <element signature="e#961#1651#0" expanded="false" />
-                <element signature="e#1682#21694#0" expanded="false" />
-                <element signature="e#1781#4645#0" expanded="false" />
-                <element signature="e#1894#2395#0" expanded="false" />
-                <element signature="e#2428#3213#0" expanded="false" />
-                <element signature="e#4677#18861#0" expanded="false" />
-                <element signature="e#18895#21688#0" expanded="false" />
-                <element signature="e#21731#21785#0" expanded="false" />
-                <element signature="e#21834#21902#0" expanded="false" />
-                <element signature="e#21944#22543#0" expanded="false" />
-                <element signature="e#23121#24088#0" expanded="false" />
-                <element signature="e#24150#24372#0" expanded="false" />
-                <element signature="e#24415#25744#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,16 +37,7 @@
       <file leaf-file-name="ModuleController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/script/tool/ModuleController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leftSide.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="7" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.3438639" vertical-offset="1137" max-vertical-offset="1960">
+            <state line="6" column="2" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
               <folding />
             </state>
           </provider>
@@ -98,8 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/nodeJS/server.js" />
-        <option value="$PROJECT_DIR$/public/script/ncumap/NCU.js" />
         <option value="$PROJECT_DIR$/public/script/ncumap/NCU2.js" />
         <option value="$PROJECT_DIR$/public/vender/leaflet.js" />
         <option value="$PROJECT_DIR$/public/style/ncumap.js" />
@@ -141,20 +94,22 @@
         <option value="$PROJECT_DIR$/app/Map/view/event.html" />
         <option value="$PROJECT_DIR$/public/resource/trafficHTML/js/BusTimeParser.js" />
         <option value="$PROJECT_DIR$/public/resource/leafletMap/js/NCUMapMarkerEditor.js" />
-        <option value="$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js" />
-        <option value="$PROJECT_DIR$/app/Map/view/traffic.html" />
         <option value="$PROJECT_DIR$/app/Map/view/map.html" />
         <option value="$PROJECT_DIR$/server/nodeJS/index.js" />
         <option value="$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js" />
         <option value="$PROJECT_DIR$/server/nodeJS/tool/PathHandler.js" />
         <option value="$PROJECT_DIR$/public/script/tool/ModuleController.js" />
         <option value="$PROJECT_DIR$/app/Map/view/leftSide.html" />
+        <option value="$PROJECT_DIR$/public/script/tool/StringFormat.js" />
+        <option value="$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js" />
+        <option value="$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css" />
+        <option value="$PROJECT_DIR$/app/Map/view/traffic.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1579" />
+    <option name="width" value="1244" />
     <option name="height" value="1010" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -343,76 +298,6 @@
               <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trafficHTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leafletMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leafletMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -563,27 +448,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1579" height="1010" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1244" height="1010" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32386363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19526628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25632378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2596811" sideWeight="0.5004314" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26704547" sideWeight="0.49956858" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26704547" sideWeight="0.49956858" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32386363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -601,9 +486,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21107544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2556818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -621,20 +506,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/css/font-awesome-4.0.3/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26880" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/nodeJS/handler/standardHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="137" selection-end="137" vertical-scroll-proportion="0.095846646" vertical-offset="0" max-vertical-offset="626" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/nodeJS/handler/particularHandlers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="22" selection-start="146" selection-end="146" vertical-scroll-proportion="0.12779553" vertical-offset="0" max-vertical-offset="626" />
@@ -662,16 +537,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/script/tool/Parser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="816" selection-end="816" vertical-scroll-proportion="1.0423453" vertical-offset="0" max-vertical-offset="760" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/attackDB.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="62" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="700">
-          <folding />
-        </state>
+        <state line="41" column="62" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="700" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/nodeJS/tool/Comparer.js">
@@ -789,11 +657,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/lib/clndr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="62" selection-end="62" vertical-scroll-proportion="0.023894863" vertical-offset="0" max-vertical-offset="837">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="1" column="24" selection-start="62" selection-end="62" vertical-scroll-proportion="0.023894863" vertical-offset="0" max-vertical-offset="837" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr.css">
@@ -805,18 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/script/tool/ResourceController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="760" selection-end="760" vertical-scroll-proportion="0.38897893" vertical-offset="0" max-vertical-offset="617">
-          <folding>
-            <element signature="e#234#429#0" expanded="false" />
-            <element signature="e#290#359#0" expanded="false" />
-            <element signature="e#363#423#0" expanded="false" />
-            <element signature="e#474#529#0" expanded="false" />
-            <element signature="e#574#624#0" expanded="false" />
-            <element signature="e#678#732#0" expanded="false" />
-            <element signature="e#792#853#0" expanded="false" />
-            <element signature="e#914#1078#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="24" column="27" selection-start="760" selection-end="760" vertical-scroll-proportion="0.38897893" vertical-offset="0" max-vertical-offset="617" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/images/arrow-left.png">
@@ -858,16 +711,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/BusTimeParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="1" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="36" column="1" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="280">
-          <folding />
-        </state>
+        <state line="7" column="7" selection-start="119" selection-end="119" vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="280" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/jquery.nouislider.min.js">
@@ -898,66 +747,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="937" selection-end="937" vertical-scroll-proportion="0.2857143" vertical-offset="312" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/leaflet.usermarker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="8" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-0.103286386" vertical-offset="1308" max-vertical-offset="2160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/nodeJS/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="61" column="8" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-0.103286386" vertical-offset="1308" max-vertical-offset="2160" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/nodeJS/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="449" selection-end="449" vertical-scroll-proportion="0.3517018" vertical-offset="23" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="112" selection-start="241" selection-end="352" vertical-scroll-proportion="0.27826086" vertical-offset="0" max-vertical-offset="1640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="405" selection-end="654" vertical-scroll-proportion="-11.724138" vertical-offset="0" max-vertical-offset="1280">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="3495" selection-end="3495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1120">
-          <folding>
-            <element signature="e#72#3407#0" expanded="false" />
-            <element signature="e#3536#3967#0" expanded="false" />
-            <element signature="e#5367#6210#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="12" column="46" selection-start="449" selection-end="449" vertical-scroll-proportion="0.3517018" vertical-offset="23" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/nodeJS/tool/PathHandler.js">
@@ -967,38 +764,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/script/tool/ModuleController.js">
+    <entry file="file://$PROJECT_DIR$/public/script/tool/Parser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+        <state line="32" column="1" selection-start="816" selection-end="816" vertical-scroll-proportion="0.9351702" vertical-offset="63" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/nodeJS/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="508" selection-end="508" vertical-scroll-proportion="0.3241491" vertical-offset="0" max-vertical-offset="617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="490" selection-end="490" vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="1960">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="31" selection-start="25834" selection-end="25834" vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="2160">
+        <state line="15" column="142" selection-start="552" selection-end="692" vertical-scroll-proportion="0.49668875" vertical-offset="0" max-vertical-offset="7400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/script/tool/StringFormat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="288" selection-end="288" vertical-scroll-proportion="0.2917342" vertical-offset="0" max-vertical-offset="617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="906" selection-end="906" vertical-scroll-proportion="0.7304348" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="71" selection-start="74" selection-end="142" vertical-scroll-proportion="-0.4869565" vertical-offset="360" max-vertical-offset="1640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.9351702" vertical-offset="1303" max-vertical-offset="2000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="44" selection-start="4348" selection-end="4348" vertical-scroll-proportion="0.48136142" vertical-offset="3443" max-vertical-offset="4180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/script/tool/ModuleController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="13" selection-start="9582" selection-end="9582" vertical-scroll-proportion="2.0529802" vertical-offset="0" max-vertical-offset="1400">
           <folding>
-            <element signature="e#961#1651#0" expanded="false" />
-            <element signature="e#1682#21694#0" expanded="false" />
-            <element signature="e#1781#4645#0" expanded="false" />
-            <element signature="e#1894#2395#0" expanded="false" />
-            <element signature="e#2428#3213#0" expanded="false" />
-            <element signature="e#4677#18861#0" expanded="false" />
-            <element signature="e#18895#21688#0" expanded="false" />
-            <element signature="e#21731#21785#0" expanded="false" />
-            <element signature="e#21834#21902#0" expanded="false" />
-            <element signature="e#21944#22543#0" expanded="false" />
-            <element signature="e#23121#24088#0" expanded="false" />
-            <element signature="e#24150#24372#0" expanded="false" />
-            <element signature="e#24415#25744#0" expanded="false" />
+            <element signature="e#72#3407#0" expanded="false" />
+            <element signature="e#5103#6487#0" expanded="false" />
+            <element signature="e#5150#5669#0" expanded="false" />
+            <element signature="e#6521#7116#0" expanded="false" />
+            <element signature="e#7216#8254#0" expanded="false" />
+            <element signature="e#8726#9025#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
+    <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="7" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.3438639" vertical-offset="1137" max-vertical-offset="1960">
-          <folding />
+        <state line="13" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.45217392" vertical-offset="0" max-vertical-offset="1360">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,57 +2,61 @@
 <html>
 <head>
     <title>TRAFFIC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" id="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
     <link rel="stylesheet" href="/public/resource/trafficHTML/css/jquery.nouislider.min.css" />
+    <link rel="stylesheet" href="/public/resource/trafficHTML/css/traffic.css" />
     <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
     <script src="/public/resource/trafficHTML/js/jquery.nouislider.min.js"></script>
-
+    <script src="/public/script/tool/StringFormat.js"></script>
     <script src="/public/resource/trafficHTML/js/NCUTraffic.js"></script>
 
-
-    <style>
-        @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
-        @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
-        body{
-            font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
-        }
-        #sliderContainer{
-            width: 100%;
-            text-align: center;
-        }
-        #sliderContainer:after{
-            display: block;
-            height: 0;
-            clear: both;
-            visibility: hidden;
-        }
-        #timeSlider{
-            float: left;
-            padding-left: 30px;
-            padding-right: 30px;
-            width: 80%;
-        }
-        .timeSliderLabel{
-            color: #eeeeee;
-            background-color: #8f8f87;
-            float: left;
-            margin: auto 1%;
-            height: 25px;
-            line-height: 25px;
-            width: 8%;
-        }
-    </style>
 </head>
 <body>
-    <div style="height: 200px;"></div>
+    <div style="height: 10px;"></div>
+    <div id="weekContainer">
+        <div class="weekDays weekday-7">日</div>
+        <div class="weekDays weekday-1">一</div>
+        <div class="weekDays weekday-2">二</div>
+        <div class="weekDays weekday-3">三</div>
+        <div class="weekDays weekday-4">四</div>
+        <div class="weekDays weekday-5">五</div>
+        <div class="weekDays weekday-6">六</div>
+    </div>
     <div id="sliderContainer"></div>
-
+    <div id="queryButton">開始搜尋</div>
+    <div id="stationContainer">
+        <div class="station">車號</div>
+        <div class="station">中壢車站</div>
+        <div class="station">中央大學</div>
+        <div class="station">高鐵桃園</div>
+    </div>
+    <div id="busContainer"></div>
     <script>
         $(document).ready(function(){
             new NCUTraffic.Bus({
-                sliderContainer:'#sliderContainer'
+                sliderContainer:'#sliderContainer',
+                weekDaysChooser:'.weekDays',
+                queryButton:'#queryButton',
+                busContainer:'#busContainer'
+            });
+
+
+            var stationContainer = $("#stationContainer");
+            var pos = stationContainer.offset().top;
+            $(window).scroll(function () {
+
+                if ($(window).scrollTop() > pos) {
+                    stationContainer.css('position','fixed');
+                    stationContainer.css('width','100%');
+                    stationContainer.css('top','0px');
+                } else {
+                    stationContainer.css('position','relative');
+                }
             });
         });
+
     </script>
 
 </body>

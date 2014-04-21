@@ -83,28 +83,14 @@ NCUTraffic.Bus = function(init){
         {n:1,a:"22:10",b:"22:30",t:1},
         {n:2,a:"14:05",b:"14:30",t:2}
     ];//桃132:1,中133:2,中172:3,每日1,一到五2,六日3
-    var sliderContainer = init["sliderContainer"];
+    var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
 
-    var timeTransformer = new function(){
-        var valueToTime = {
-            0:"04:00",
-            10:"06:00",
-            20:"08:00",
-            30:"10:00",
-            40:"12:00",
-            50:"14:00",
-            60:"16:00",
-            70:"18:00",
-            80:"20:00",
-            90:"22:00",
-            100:"24:00"
-        };
-      return {
-          transformValueToTime:function(value){
-            return valueToTime[value];
-          }
-      }
-    };
+    var weekTimeStates=[false,false,false,false,false,false,false,false];
+
+    var sliderContainer = init["sliderContainer"],
+        weekDaysChooser = init["weekDaysChooser"],
+        queryButton     = init["queryButton"],
+        busContainer    = init["busContainer"];
 
     var timeSliderID = "timeSlider",
         timeSliderLowerLabelID = "timeSliderLowerLabel",
@@ -115,10 +101,47 @@ NCUTraffic.Bus = function(init){
         '<div id="'+timeSliderID+'"></div>' +
         '<div id="'+timeSliderUpperLabelID+'" class="'+timeSliderLabelClass+'"></div>';
 
+    var listBusRowClass ="listBusRow",
+        listBusNumberClass ="listBusNumber",
+        listBusStation1Class="listBusStaion1",
+        listBusStation2Class="listBusStaion2",
+        listBusStation3Class="listBusStaion3",
+        listBusHTML=
+            '<div class="'+listBusRowClass+'"> ' +
+                '<div class="listStation '+listBusNumberClass+'">{0}</div>'+
+                '<div class="listStation '+listBusStation1Class+'">{1}</div>'+
+                '<div class="listStation '+listBusStation2Class+'">{2}</div>'+
+                '<div class="listStation '+listBusStation3Class+'">{3}</div>'+
+            '</div>';
 
-    initSlider();
-
+    initComponents();
+    function initComponents(){
+        initSlider();
+        initWeekDayChooser();
+        initQueryEvent();
+    }
     function initSlider(){
+
+        var timeTransformer = new function(){
+            var valueToTime = {
+                0:"04:00",
+                10:"06:00",
+                20:"08:00",
+                30:"10:00",
+                40:"12:00",
+                50:"14:00",
+                60:"16:00",
+                70:"18:00",
+                80:"20:00",
+                90:"22:00",
+                100:"24:00"
+            };
+            return {
+                transformValueToTime:function(value){
+                    return valueToTime[value];
+                }
+            }
+        };
 
         var transformTargetValueToTime = function(val){
             $(this).text(timeTransformer.transformValueToTime(parseInt(val)));
@@ -146,28 +169,73 @@ NCUTraffic.Bus = function(init){
         });
 
     }
-
-
-    NCUTraffic.Bus.prototype.getByTimeBeginEndDays = function(timebegin,timeend,days){
-        var timeArray=[],element;
-        var daysArray=[0,0,0,0], i;
-        for(i=0;i<days.length;i++){
-            switch (days[i]){
-                case "1":daysArray[1]=1;daysArray[2]=1;break;
-                case "2":daysArray[1]=1;daysArray[2]=1;break;
-                case "3":daysArray[1]=1;daysArray[2]=1;break;
-                case "4":daysArray[1]=1;daysArray[2]=1;break;
-                case "5":daysArray[1]=1;daysArray[2]=1;break;
-                case "6":daysArray[1]=1;daysArray[3]=1;break;
-                case "7":daysArray[1]=1;daysArray[3]=1;break;
+    function initWeekDayChooser(){
+        $(weekDaysChooser).on(clickEventName,function(){
+            var thisButton = $(this);
+            var thisWeekString = thisButton.attr('class').match(/weekday-\d/);
+            var thisWeekTime   = thisWeekString.toString().substr(8,1);
+            var className = 'weekDaysChoosed';
+            if(thisButton.hasClass(className)){
+                weekTimeStates[thisWeekTime]=false;
+                thisButton.removeClass(className);
+            }else{
+                weekTimeStates[thisWeekTime]=true;
+                thisButton.addClass(className);
             }
-        }
-        for(i=0;i<busTime.length;i++){
-            element = busTime[i];
-            if(element.b<timebegin&&element.b>timeend&&daysArray[element.t]){
-                timeArray.push(element);
+        });
+    }
+    function initQueryEvent(){
+        var getByTimeBeginEndDays = function(timebegin,timeend,days){
+            var timeArray=[],element;
+            var daysArray=[0,0,0,0], i;
+            for(i=0;i<days.length;i++){
+                switch (days[i]){
+                    case "1":daysArray[1]=1;daysArray[2]=1;break;
+                    case "2":daysArray[1]=1;daysArray[2]=1;break;
+                    case "3":daysArray[1]=1;daysArray[2]=1;break;
+                    case "4":daysArray[1]=1;daysArray[2]=1;break;
+                    case "5":daysArray[1]=1;daysArray[2]=1;break;
+                    case "6":daysArray[1]=1;daysArray[3]=1;break;
+                    case "7":daysArray[1]=1;daysArray[3]=1;break;
+                }
             }
-        }
-        return timeArray;
+            for(i=0;i<busTime.length;i++){
+                element = busTime[i];
+                if(element.b>timebegin&&element.b<timeend&&daysArray[element.t]){
+                    timeArray.push(element);
+                }
+            }
+            timeArray.sort(function(a,b){
+                return (a.b> b.b?1:(a.b< b.b?-1:0));
+            });
+            return timeArray;
+        };
+        (function initQueryButton(){
+            var timeSliderLowerLabel = $("#"+timeSliderLowerLabelID);
+            var timeSliderUpperLabel = $("#"+timeSliderUpperLabelID);
+            var busContainerSelector = $(busContainer);
+            $(queryButton).on(clickEventName,function(){
+
+                var timeBegin = timeSliderLowerLabel.text();
+                var timeEnd   = timeSliderUpperLabel.text();
+                var days      = (function getActiveDays(){
+                    var activeDays="";
+                    for(var i=1;i<weekTimeStates.length;i++){
+                        if(weekTimeStates[i]){
+                            activeDays+=(i);
+                        }
+                    }
+                    return activeDays;
+                })();
+                var resultArray = getByTimeBeginEndDays(timeBegin,timeEnd,days);
+                busContainerSelector.html("");
+                for(var i=0;i<resultArray.length;i++){
+                    var busElement = resultArray[i];
+                    var HTMLtemplate = String.format(listBusHTML,(busElement.n==1?"桃132":busElement.n==2?"中133":"中172"),
+                        busElement.a,busElement.b,(busElement.c?busElement.c:"--"));
+                    busContainerSelector.append(HTMLtemplate);
+                }
+            });
+        })();
     }
 };
