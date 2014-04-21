@@ -1,4 +1,4 @@
-<img src="http://i.imgur.com/xvSJqno.png" align="left"/>
+<img src="http://i.imgur.com/xvSJqno.png" align="right"/>
 
 > ## 三個html檔案都在app/Map/view裡面
 1. map.html     對應 public/resource/leafletMap
