@@ -119,6 +119,7 @@ NCUTraffic.Bus = function(init){
         initSlider();
         initWeekDayChooser();
         initQueryEvent();
+        initTodayBus();
     }
     function initSlider(){
 
@@ -210,23 +211,23 @@ NCUTraffic.Bus = function(init){
             });
             return timeArray;
         };
+        var getActiveDays = function (){
+            var activeDays="";
+            for(var i=1;i<weekTimeStates.length;i++){
+                if(weekTimeStates[i]){
+                    activeDays+=(i);
+                }
+            }
+            return activeDays;
+        };
         (function initQueryButton(){
             var timeSliderLowerLabel = $("#"+timeSliderLowerLabelID);
             var timeSliderUpperLabel = $("#"+timeSliderUpperLabelID);
             var busContainerSelector = $(busContainer);
             $(queryButton).on(clickEventName,function(){
-
                 var timeBegin = timeSliderLowerLabel.text();
                 var timeEnd   = timeSliderUpperLabel.text();
-                var days      = (function getActiveDays(){
-                    var activeDays="";
-                    for(var i=1;i<weekTimeStates.length;i++){
-                        if(weekTimeStates[i]){
-                            activeDays+=(i);
-                        }
-                    }
-                    return activeDays;
-                })();
+                var days        = getActiveDays();
                 var resultArray = getByTimeBeginEndDays(timeBegin,timeEnd,days);
                 busContainerSelector.html("");
                 for(var i=0;i<resultArray.length;i++){
@@ -237,5 +238,25 @@ NCUTraffic.Bus = function(init){
                 }
             });
         })();
+    }
+    function initTodayBus(){
+        var today = new Date();
+        var weekDay = (today.getDay()==0?7:today.getDay());
+        var hourNow = today.getHours();
+        switch (hourNow){
+            case  0:case 1:case 2:case 3:case 4:case 5: hourNow=0;break;
+            case  6:case  7:hourNow=10;break;
+            case  8:case  9:hourNow=20;break;
+            case 10:case 11:hourNow=30;break;
+            case 12:case 13:hourNow=40;break;
+            case 14:case 15:hourNow=50;break;
+            case 16:case 17:hourNow=60;break;
+            case 18:case 19:hourNow=70;break;
+            case 20:case 21:hourNow=80;break;
+            case 22:case 23:hourNow=90;break;
+        }
+        $('#'+timeSliderID).val([hourNow,100]);
+        $('.weekday-'+weekDay).click();
+        $('#queryButton').click();
     }
 };
