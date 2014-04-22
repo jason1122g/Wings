@@ -46,14 +46,20 @@
 
             var stationContainer = $("#stationContainer");
             var pos = stationContainer.offset().top;
+            var checkFlag = false;
             $(window).scroll(function () {
-
                 if ($(window).scrollTop() > pos) {
-                    stationContainer.css('position','fixed');
-                    stationContainer.css('width','100%');
-                    stationContainer.css('top','0px');
-                } else {
-                    stationContainer.css('position','relative');
+                    if(!checkFlag){
+                        stationContainer.css('position','fixed');
+                        stationContainer.css('width','100%');
+                        stationContainer.css('top','0px');
+                        checkFlag = true;
+                    }
+                } else{
+                    if(checkFlag){
+                        stationContainer.css('position','relative');
+                        checkFlag = false;
+                    }
                 }
             });
         });

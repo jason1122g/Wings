@@ -240,7 +240,7 @@ NCUTraffic.Bus = function(init){
         })();
     }
     function initTodayBus(){
-        var today = new Date(); 
+        var today = new Date();
         var weekDay = (today.getDay()==0?7:today.getDay());
         var hourNow = today.getHours();
         switch (hourNow){
@@ -256,7 +256,7 @@ NCUTraffic.Bus = function(init){
             case 22:case 23:hourNow=90;break;
         }
         $('#'+timeSliderID).val([hourNow,100]);
-        $('.weekday-'+weekDay).click();
-        $('#queryButton').click();
+        $('.weekday-'+weekDay).trigger(clickEventName);
+        $('#queryButton').trigger(clickEventName);
     }
 };

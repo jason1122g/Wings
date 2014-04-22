@@ -26,7 +26,7 @@
       <file leaf-file-name="traffic.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1737" selection-end="1737" vertical-scroll-proportion="-9.4827585" vertical-offset="605" max-vertical-offset="1380">
+            <state line="55" column="41" selection-start="2244" selection-end="2244" vertical-scroll-proportion="-20.51724" vertical-offset="505" max-vertical-offset="1500">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="NCUTraffic.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="32" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.8013245" vertical-offset="416" max-vertical-offset="1400">
+            <state line="255" column="45" selection-start="10251" selection-end="10251" vertical-scroll-proportion="1.9205298" vertical-offset="0" max-vertical-offset="1400">
               <folding>
                 <element signature="e#72#3407#0" expanded="false" />
                 <element signature="e#5127#6511#0" expanded="false" />
@@ -53,7 +53,7 @@
       <file leaf-file-name="ModuleController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/script/tool/ModuleController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="2" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+            <state line="5" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
               <folding />
             </state>
           </provider>
@@ -193,6 +193,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -893,14 +903,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/script/tool/ModuleController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+        <state line="5" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1737" selection-end="1737" vertical-scroll-proportion="-9.4827585" vertical-offset="605" max-vertical-offset="1380">
+        <state line="55" column="41" selection-start="2244" selection-end="2244" vertical-scroll-proportion="-20.51724" vertical-offset="505" max-vertical-offset="1500">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -909,7 +919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="32" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.8013245" vertical-offset="416" max-vertical-offset="1400">
+        <state line="255" column="45" selection-start="10251" selection-end="10251" vertical-scroll-proportion="1.9205298" vertical-offset="0" max-vertical-offset="1400">
           <folding>
             <element signature="e#72#3407#0" expanded="false" />
             <element signature="e#5127#6511#0" expanded="false" />
