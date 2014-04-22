@@ -240,7 +240,7 @@ NCUTraffic.Bus = function(init){
         })();
     }
     function initTodayBus(){
-        var today = new Date();
+        var today = new Date(); 
         var weekDay = (today.getDay()==0?7:today.getDay());
         var hourNow = today.getHours();
         switch (hourNow){

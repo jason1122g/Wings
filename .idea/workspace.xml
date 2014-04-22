@@ -37,7 +37,7 @@
       <file leaf-file-name="NCUTraffic.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="5" selection-start="5101" selection-end="5101" vertical-scroll-proportion="0.6357616" vertical-offset="416" max-vertical-offset="1020">
+            <state line="242" column="32" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.8013245" vertical-offset="416" max-vertical-offset="1400">
               <folding>
                 <element signature="e#72#3407#0" expanded="false" />
                 <element signature="e#5127#6511#0" expanded="false" />
@@ -45,7 +45,6 @@
                 <element signature="e#7170#9577#0" expanded="false" />
                 <element signature="e#7240#8278#0" expanded="false" />
                 <element signature="e#8319#8554#0" expanded="false" />
-                <element signature="e#9605#10390#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -910,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="5" selection-start="5101" selection-end="5101" vertical-scroll-proportion="0.6357616" vertical-offset="416" max-vertical-offset="1020">
+        <state line="242" column="32" selection-start="9639" selection-end="9639" vertical-scroll-proportion="0.8013245" vertical-offset="416" max-vertical-offset="1400">
           <folding>
             <element signature="e#72#3407#0" expanded="false" />
             <element signature="e#5127#6511#0" expanded="false" />
@@ -918,7 +917,6 @@
             <element signature="e#7170#9577#0" expanded="false" />
             <element signature="e#7240#8278#0" expanded="false" />
             <element signature="e#8319#8554#0" expanded="false" />
-            <element signature="e#9605#10390#0" expanded="false" />
           </folding>
         </state>
       </provider>
