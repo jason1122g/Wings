@@ -34,7 +34,7 @@ NCUMap.Map = function(init){
         overrideAPropertiesToBWithJSON(mapInitiator(),mapOriginInitiator);
         var map = L.map(container,mapOriginInitiator).setView([24.968282,121.192511],16);
         map.doubleClickZoom.disable();
-        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
         }).addTo(map);
         return map;
