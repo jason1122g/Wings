@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" id="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Asap:400,700);
+        @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+        body{
+            font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            color: #3e3e3e;
+        }
+        table{
+            width: 100%;
+        }
+        .trodd td{
+            background-color: #e2e2ee;
+        }
+        .treven td{
+            background-color: #eeeecc;
+        }
+        .trTitle{
+            background-color: #f3c9b7;
+        }
+        .trHeader td{
+            border: 1px solid #3e3e3e;
+        }
+        .tdA{
+            width: 40%;
+        }
+        .tdB{
+            width: 30%;
+        }
+        .tdC{
+            width: 30%;
+        }
+        #ncuContact{
+            font-size: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <select id="ncuContact">
+        <option value="" disabled selected>選擇單位通訊錄</option>
+        <option value="contactA.html">行政單位通訊錄</option>
+        <option value="contactB.html">教學單位通訊錄</option>
+        <option value="contactC.html">研究單位通訊錄</option>
+        <option value="contactD.html">常用電話通訊錄</option>
+        <option value="contactE.html">學生宿舍通訊錄</option>
+    </select>
+    <div id="contactContainer"></div>
+    <script>
+        $(document).ready(function(){
+            var selector_Contact = $('#ncuContact');
+            var container_Contact = $('#contactContainer');
+            selector_Contact.change(function(){
+                container_Contact.load("/"+selector_Contact.val());
+            });
+            container_Contact.load("/"+"contactA.html");
+            document.getElementById("ncuContact").selectedIndex = 1;
+        });
+    </script>
+</body>
+</html>

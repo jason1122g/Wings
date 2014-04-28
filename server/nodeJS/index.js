@@ -13,7 +13,13 @@ pathHandler.addRoutePaths({
     "attackDB.html":viewPath+"/attackDB.html",
     "traffic.html":viewPath+"/traffic.html",
     "event.html":viewPath+"/event.html",
-    "leftSide.html":viewPath+"/leftSide.html"
+    "leftSide.html":viewPath+"/leftSide.html",
+    "contact.html":viewPath+"/contact.html",
+    "contactA.html":viewPath+"/contacts/contactA.html",
+    "contactB.html":viewPath+"/contacts/contactB.html",
+    "contactC.html":viewPath+"/contacts/contactC.html",
+    "contactD.html":viewPath+"/contacts/contactD.html",
+    "contactE.html":viewPath+"/contacts/contactE.html"
 });
 pathHandler.addSpecialHandler({
 //    "/":particularHandlers.start
