@@ -15,11 +15,12 @@ pathHandler.addRoutePaths({
     "event.html":viewPath+"/event.html",
     "leftSide.html":viewPath+"/leftSide.html",
     "contact.html":viewPath+"/contact.html",
-    "contactA.html":viewPath+"/contacts/contactA.html",
-    "contactB.html":viewPath+"/contacts/contactB.html",
-    "contactC.html":viewPath+"/contacts/contactC.html",
-    "contactD.html":viewPath+"/contacts/contactD.html",
-    "contactE.html":viewPath+"/contacts/contactE.html"
+    "contacts/contactA.html":viewPath+"/contacts/contactA.html",
+    "contacts/contactB.html":viewPath+"/contacts/contactB.html",
+    "contacts/contactC.html":viewPath+"/contacts/contactC.html",
+    "contacts/contactD.html":viewPath+"/contacts/contactD.html",
+    "contacts/contactE.html":viewPath+"/contacts/contactE.html",
+    "mapContact.html":viewPath+"/mapContact.html"
 });
 pathHandler.addSpecialHandler({
 //    "/":particularHandlers.start

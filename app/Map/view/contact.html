@@ -3,7 +3,9 @@
 <head>
     <title>Contact</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
     <meta name="viewport" id="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="/public/script/tool/StringFormat.js"></script>
     <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
 
     <style>
@@ -51,9 +53,39 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        #mapDialog{
+            background-color: #000;
+            position: fixed;
+            width : 80%;
+            height: 300px;
+            margin-left : 10%;
+            margin-right: 10%;
+            top: 50px;
+        }
+        #mapDialogContainer{
+            width: 100%;
+            height: 570px;
+        }
+        #mapDialogQuitButton{
+            border: 1px solid #3e3e3e;
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background-color: #fff;
+        }
+        #mapDialogQuitButton:hover{
+            cursor: pointer;
+            background-color: #ebebeb;
+        }
     </style>
 </head>
 <body>
+    <div id="mapDialog">
+        <div id="mapDialogContainer"></div>
+        <div id="mapDialogQuitButton">CLOSE</div>
+    </div>
     <select id="ncuContact">
         <option value="" disabled selected>選擇單位通訊錄</option>
         <option value="contactA.html">行政單位通訊錄</option>
@@ -64,7 +96,28 @@
     </select>
     <div id="contactContainer"></div>
     <script>
+
+
         var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
+
+        var buildingLocator = new function StringMapping(){
+            var administrationBuilding = "行政大樓",
+                dormB6                 = "男六舍";
+            var stringMap ={
+                "教務處":administrationBuilding,
+                "註冊組":administrationBuilding,
+                "課務組":administrationBuilding,
+                "招生組":administrationBuilding,
+                "教學發展中心":administrationBuilding,
+                "男6舍":dormB6
+            };
+            StringMapping.prototype.getByKey = function(key){
+                return stringMap[key];
+            }
+        };
+
+        var iframeHTML = "<iframe src='mapContact.html?location={0}' height='100%' width='100%'></iframe>";
+
         $(document).ready(function(){
 
             var selector_Contact = $('#ncuContact');
@@ -73,13 +126,23 @@
             selector_Contact.change(function(){
                 container_Contact.load("contacts/"+selector_Contact.val(),function(){
                     $('.contactLocation').off(clickEventName).on(clickEventName,function(){
-                        console.log("text:"+$(this).text().trim());
+                        var pointName     = $(this).text().trim();
+                        var buildingName  = buildingLocator.getByKey(pointName);
+
+                        if(typeof buildingName != 'undefined'){
+                            $('#mapDialog').show();
+                            $('#mapDialogContainer').html(String.format(iframeHTML,buildingName));
+                        }
                     });
                 });
             });
 
-            selector_Contact.val("contactA.html").change();
+            $('#mapDialog').hide();
+            $('#mapDialogQuitButton').on(clickEventName,function(){
+                $('#mapDialog').hide();
+            });
 
+            selector_Contact.val("contactA.html").change();
         });
     </script>
 </body>

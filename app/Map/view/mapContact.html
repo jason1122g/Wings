@@ -50,16 +50,34 @@
                 codeServerURL:"https://appforncu.appspot.com/getmap",
                 customMap:{
                     coderEnable:false,
-                    selecterEnable:true,
+                    selecterEnable:false,
                     gpsEnable:false,
-                    settingEnable:true,
-                    locationMarkerEnable:false
+                    settingEnable:false,
+                    locationMarkerEnable:true
                 }
             });
-//            var mapMarkerEditor = new NCUMap.MarkerEditor({
-//                map: map
-//            });
-            map.addCustomLayerByIDs(["e866194a4142f92b2aa51891b651d970"]);
+
+            var searchURL = location.search;
+            var arrParams,resultSet={};
+            if(searchURL.indexOf("?") != -1){
+                arrParams = searchURL.split("?")[1].split("&");
+                for(var i=0;i<arrParams.length;i++){
+                    var queryPair = arrParams[i].split("=");
+                    resultSet[queryPair[0]] = queryPair[1];
+                }
+                if(resultSet["location"]){
+                    var name =decodeURIComponent(resultSet["location"]);
+                    var timer = setInterval(function(){
+                        map.setViewToName(name);
+                        clearInterval(timer);
+                    },500);
+                }else if(resultSet["lat"]){
+                    map.setViewToLatlng(resultSet["lat"],resultSet["lng"]);
+                }else if(resultSet["codes"]){
+                    map.addCustomLayerByIDs(resultSet["codes"].split(","));
+                }
+            }
+
         });
     </script>
 	

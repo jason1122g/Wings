@@ -1,23 +1,26 @@
 var NCUMap = {};
 NCUMap.Map = function(init){
     var thisPtr = NCUMap.Map;
+    var lastMarker;
+
     var container = init["container"];
     var codeServerURL = init["codeServerURL"];
     if(init["customMap"]){
-        var mapInitiator = init["customMap"]["mapInitiator"];
-        var gpsEnable = init["customMap"]["gpsEnable"];
-        var settingEnable = init["customMap"]["settingEnable"];
-        var coderEnable = init["customMap"]["coderEnable"];
-        var selecterEnable = init["customMap"]["selecterEnable"];
+        var mapInitiator = init["customMap"]["mapInitiator"],
+            gpsEnable = init["customMap"]["gpsEnable"],
+            settingEnable = init["customMap"]["settingEnable"],
+            coderEnable = init["customMap"]["coderEnable"],
+            selecterEnable = init["customMap"]["selecterEnable"],
+            locationMarkerEnable = init["customMap"]["locationMarkerEnable"];
     }
     var customMarker = init["customMarker"];
 
 
     var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
-    var locationNameToLatlng  = {};
-    var layerIdToRefernce = {};
-    var layerCodeInput;   //jquery selector(input/text)
-    var layerDivGroup;    //jquery selector(div/checkbox,delete,label)
+    var locationNameToLatlng  = {},
+        layerIdToRefernce = {},
+        layerCodeInput,   //jquery selector(input/text)
+        layerDivGroup;    //jquery selector(div/checkbox,delete,label)
 
 
     var map = initMap();
@@ -31,7 +34,9 @@ NCUMap.Map = function(init){
             zoomControl:false,
             attributionControl:true
         };
-        overrideAPropertiesToBWithJSON(mapInitiator(),mapOriginInitiator);
+        if(mapInitiator){
+            overrideAPropertiesToBWithJSON(mapInitiator(),mapOriginInitiator);
+        }
         var map = L.map(container,mapOriginInitiator).setView([24.968282,121.192511],16);
         map.doubleClickZoom.disable();
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -129,7 +134,9 @@ NCUMap.Map = function(init){
                 onEachFeature:function(feature){
                     var name = feature.properties.name;
                     locationNameToLatlng[name] = [feature.geometry.coordinates[1],feature.geometry.coordinates[0]];
-                    selector_area.append("<option value='"+name+"'>"+name+"</option>");
+                    if(selecterEnable){
+                        selector_area.append("<option value='"+name+"'>"+name+"</option>");
+                    }
                 }
             });
         }
@@ -207,8 +214,21 @@ NCUMap.Map = function(init){
     function setViewToLatlng(target){
         map.setView(target,18,{animate:true});
     }
+
     function setViewToLocationName(locationName){
-        setViewToLatlng(locationNameToLatlng[locationName]);
+        var latlng = locationNameToLatlng[locationName];
+        if(typeof latlng != 'undefined'){
+            if(selecterEnable){
+                $('#ncuplace').val(locationName);
+            }
+            if(locationMarkerEnable){
+                if(lastMarker){
+                    map.removeLayer(lastMarker);
+                }
+                lastMarker = L.marker(latlng).bindPopup(locationName).addTo(map).openPopup();
+            }
+            setViewToLatlng(latlng);
+        }
     }
     function setLayerState(layerId,state){
         var checkbox = $("#"+layerId).find('label.nculayercheckbox');
@@ -279,14 +299,15 @@ NCUMap.Map = function(init){
         var markerOriginInitiator = {icon :L.AwesomeMarkers.icon(prop.icon)};
         var marker = L.marker(L.latLng(geo[1],geo[0]),markerOriginInitiator).bindPopup(fetchDataIntoHTML(prop));
 
-        var newMarker = customMarker({
-            markerInstance:marker,
-            initiator:markerOriginInitiator,
-            properties:prop
-        });
-
-        if(newMarker){
-            marker = newMarker;
+        if(customMarker){
+            var newMarker = customMarker({
+                markerInstance:marker,
+                initiator:markerOriginInitiator,
+                properties:prop
+            });
+            if(newMarker){
+                marker = newMarker;
+            }
         }
 
         return marker;
