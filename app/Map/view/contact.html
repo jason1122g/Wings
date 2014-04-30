@@ -69,7 +69,7 @@
             var selector_Contact = $('#ncuContact');
             var container_Contact = $('#contactContainer');
             selector_Contact.change(function(){
-                container_Contact.load("/"+selector_Contact.val(),function(){
+                container_Contact.load(selector_Contact.val(),function(){
                     $('.contactLocation').off(clickEventName).on(clickEventName,function(){
                         console.log("text:"+$(this).text().trim());
                     });
