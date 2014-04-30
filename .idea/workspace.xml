@@ -26,99 +26,8 @@
       <file leaf-file-name="contact.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Map/view/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="2822" selection-end="2822" vertical-scroll-proportion="1.2991453" vertical-offset="1200" max-vertical-offset="3080">
+            <state line="55" column="19" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.37606838" vertical-offset="880" max-vertical-offset="3140">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/nodeJS/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="27" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapContact.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Map/view/mapContact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="56" selection-start="146" selection-end="199" vertical-scroll-proportion="-3.1724138" vertical-offset="8" max-vertical-offset="1800">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NCUMap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/NCUMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="46" selection-start="21985" selection-end="21985" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2320">
-              <folding>
-                <element signature="e#208#601#0" expanded="false" />
-                <element signature="e#1060#1791#0" expanded="false" />
-                <element signature="e#1095#1326#0" expanded="false" />
-                <element signature="e#1646#1752#0" expanded="false" />
-                <element signature="e#2034#2535#0" expanded="false" />
-                <element signature="e#2156#2477#0" expanded="false" />
-                <element signature="e#3386#4775#0" expanded="false" />
-                <element signature="e#3504#3599#0" expanded="false" />
-                <element signature="e#3720#3795#0" expanded="false" />
-                <element signature="e#3965#4311#0" expanded="false" />
-                <element signature="e#4136#4213#0" expanded="false" />
-                <element signature="e#4217#4293#0" expanded="false" />
-                <element signature="e#4394#4655#0" expanded="false" />
-                <element signature="e#4692#4761#0" expanded="false" />
-                <element signature="e#5283#5372#0" expanded="false" />
-                <element signature="e#5422#5505#0" expanded="false" />
-                <element signature="e#19101#21894#0" expanded="false" />
-                <element signature="e#19129#21884#0" expanded="false" />
-                <element signature="e#19240#19481#0" expanded="false" />
-                <element signature="e#19663#19747#0" expanded="false" />
-                <element signature="e#19989#20571#0" expanded="false" />
-                <element signature="e#20025#20553#0" expanded="false" />
-                <element signature="e#20063#20279#0" expanded="false" />
-                <element signature="e#20283#20487#0" expanded="false" />
-                <element signature="e#20783#21617#0" expanded="false" />
-                <element signature="e#20831#21299#0" expanded="false" />
-                <element signature="e#20912#21018#0" expanded="false" />
-                <element signature="e#21303#21599#0" expanded="false" />
-                <element signature="e#21383#21463#0" expanded="false" />
-                <element signature="e#21670#21743#0" expanded="false" />
-                <element signature="e#21773#21868#0" expanded="false" />
-                <element signature="e#22577#23176#0" expanded="false" />
-                <element signature="e#22726#22944#0" expanded="false" />
-                <element signature="e#22948#23170#0" expanded="false" />
-                <element signature="e#23211#23710#0" expanded="false" />
-                <element signature="e#23236#23704#0" expanded="false" />
-                <element signature="e#23314#23692#0" expanded="false" />
-                <element signature="e#23504#23678#0" expanded="false" />
-                <element signature="e#23754#24721#0" expanded="false" />
-                <element signature="e#24783#25005#0" expanded="false" />
-                <element signature="e#25048#26444#0" expanded="false" />
-                <element signature="e#25885#26227#0" expanded="false" />
-                <element signature="e#26017#26144#0" expanded="false" />
-                <element signature="e#26148#26213#0" expanded="false" />
-                <element signature="e#26289#26396#0" expanded="false" />
-                <element signature="e#26501#26651#0" expanded="false" />
-                <element signature="e#26533#26645#0" expanded="false" />
-                <element signature="e#26577#26635#0" expanded="false" />
-                <element signature="e#26708#26798#0" expanded="false" />
-                <element signature="e#26747#26792#0" expanded="false" />
-                <element signature="e#26951#26994#0" expanded="false" />
-                <element signature="e#27052#27759#0" expanded="false" />
-                <element signature="e#27178#27357#0" expanded="false" />
-                <element signature="e#27222#27282#0" expanded="false" />
-                <element signature="e#27286#27347#0" expanded="false" />
-                <element signature="e#27399#27594#0" expanded="false" />
-                <element signature="e#27504#27584#0" expanded="false" />
-                <element signature="e#27633#27753#0" expanded="false" />
-                <element signature="e#27689#27743#0" expanded="false" />
-                <element signature="e#27807#27842#0" expanded="false" />
-                <element signature="e#27891#28068#0" expanded="false" />
-                <element signature="e#27911#28058#0" expanded="false" />
-                <element signature="e#27967#28044#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -519,11 +428,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\leafletMap\js\images" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\app\Map\view" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\trafficHTML\js" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\trafficHTML\css" />
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\eventHTML\css" />
-      <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\vender\jquery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jason\PhpstormProjects\NCUAPP\public\resource\eventHTML\lib" />
@@ -1089,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2822" selection-end="2822" vertical-scroll-proportion="1.2991453" vertical-offset="1200" max-vertical-offset="3080">
+        <state line="55" column="19" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.37606838" vertical-offset="880" max-vertical-offset="3140">
           <folding />
         </state>
       </provider>
