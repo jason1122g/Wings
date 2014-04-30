@@ -66,8 +66,10 @@
     <script>
         var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
         $(document).ready(function(){
+
             var selector_Contact = $('#ncuContact');
             var container_Contact = $('#contactContainer');
+
             selector_Contact.change(function(){
                 container_Contact.load("/"+selector_Contact.val(),function(){
                     $('.contactLocation').off(clickEventName).on(clickEventName,function(){
@@ -75,7 +77,9 @@
                     });
                 });
             });
+
             selector_Contact.val("contactA.html").change();
+
         });
     </script>
 </body>
