@@ -3,33 +3,77 @@
 <head>
     <title>HelloWorld!</title>
     <link rel="stylesheet" href="/public/resource/leafletMap/css/font-awesome-4.0.3/css/font-awesome.min.css" />
+    <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
 </head>
 <body>
-    Nothing is here Don't attack me
-    <!--<style>-->
-        <!--.kinfo-box{-->
-            <!--position: absolute;-->
-            <!--left: 20%;-->
-            <!--top: 20%;-->
-            <!--width: 60%;-->
-            <!--height: 60%;-->
-            <!--background-color: #b3ecff;-->
-            <!--border-radius: 15px;-->
-            <!--text-align: center;-->
-            <!--vertical-align: middle;-->
-        <!--}-->
-        <!--.kinfo-spinner{-->
-            <!--position: absolute;-->
-            <!--top: 50%;-->
-            <!--/*font-size: 100px;*/-->
-        <!--}-->
-    <!--</style>-->
-    <!--<div class="kinfo-box">-->
-        <!--<div class="kinfo-msg">-->
-            <!--讀取中請稍後-->
-        <!--</div>-->
-        <!--<i class="fa fa-refresh fa-spin kinfo-spinner"></i>-->
-    <!--</div>-->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Asap:400,700);
+        @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+        body{
+            font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
+            background-color: #c8fcff;
+        }
+        .kinfo-box{
+            /*position: absolute;*/
+            /*left: 0%;*/
+            /*top: 10%;*/
+            /*width: 100%;*/
+            /*height: 80%;*/
+            /*background-color: #c8fcff;*/
+            /*border-radius: 15px;*/
+            /*text-align: center;*/
+        }
+        .kinfo-msg{
+            position: absolute;
+            display: table;
+            left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -100px;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(62, 62, 62, 0.50);
+            border-radius: 15px;
+            text-align: center;
+            font-size: 40px;
+            color: #fff;
+        }
+        .kinfo-msg-block{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .kinfo-background{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -400px;
+            margin-left: -600px;
+        }
+    </style>
+    <div class="kinfo-box">
+        <div class="kinfo-mid">
+            <img class="kinfo-background" src="/public/image/home_bg.jpg">
+            <div class="kinfo-msg">
+                <div class="kinfo-msg-block">
+                    <div class="kinfo-ymd"></div>
+                    <div class="kinfo-hms"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var field_ymd = $('.kinfo-ymd');
+            var field_hms = $('.kinfo-hms');
+            setInterval(function(){
+                var date = new Date();
+                var ymd  = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate();
+                var hms  = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+                field_ymd.text(ymd);
+                field_hms.text(hms);
+            },500);
+        });
+    </script>
 
 </body>
 </html>
