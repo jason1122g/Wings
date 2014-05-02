@@ -3,6 +3,8 @@
 <head>
     <title>HelloWorld!</title>
     <link rel="stylesheet" href="/public/resource/leafletMap/css/font-awesome-4.0.3/css/font-awesome.min.css" />
+
+    <meta name="viewport" id="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <script src="/public/vender/jquery/jquery-2.1.0.min.js"></script>
 </head>
 <body>
@@ -12,16 +14,11 @@
         body{
             font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
             background-color: #c8fcff;
+            overflow: hidden;
         }
         .kinfo-box{
-            /*position: absolute;*/
-            /*left: 0%;*/
-            /*top: 10%;*/
-            /*width: 100%;*/
-            /*height: 80%;*/
-            /*background-color: #c8fcff;*/
-            /*border-radius: 15px;*/
-            /*text-align: center;*/
+            width: 100%;
+            height: 100%;
         }
         .kinfo-msg{
             position: absolute;
@@ -48,6 +45,11 @@
             left: 50%;
             margin-top: -400px;
             margin-left: -600px;
+        }
+        @media all and (max-width:1200px) {
+            .kinfo-background {
+
+            }
         }
     </style>
     <div class="kinfo-box">

@@ -26,7 +26,7 @@
       <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Map/view/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="16" selection-start="3717" selection-end="3717" vertical-scroll-proportion="-6.37931" vertical-offset="2275" max-vertical-offset="3280">
+            <state line="5" column="56" selection-start="185" selection-end="295" vertical-scroll-proportion="-3.4482758" vertical-offset="0" max-vertical-offset="3280">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Map/view/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="22" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.7606838" vertical-offset="735" max-vertical-offset="1680">
+            <state line="37" column="25" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.37606838" vertical-offset="520" max-vertical-offset="1720">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="clndr2.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4180">
+            <state line="145" column="0" selection-start="3483" selection-end="3570" vertical-scroll-proportion="0.0" vertical-offset="2486" max-vertical-offset="4180">
               <folding />
             </state>
           </provider>
@@ -928,21 +928,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="16" selection-start="3717" selection-end="3717" vertical-scroll-proportion="-6.37931" vertical-offset="2275" max-vertical-offset="3280">
+        <state line="5" column="56" selection-start="185" selection-end="295" vertical-scroll-proportion="-3.4482758" vertical-offset="0" max-vertical-offset="3280">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4180">
+        <state line="145" column="0" selection-start="3483" selection-end="3570" vertical-scroll-proportion="0.0" vertical-offset="2486" max-vertical-offset="4180">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="22" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.7606838" vertical-offset="735" max-vertical-offset="1680">
+        <state line="37" column="25" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.37606838" vertical-offset="520" max-vertical-offset="1720">
           <folding />
         </state>
       </provider>
