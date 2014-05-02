@@ -8,46 +8,63 @@
 <body>
     123
     <script>
-        $(document).ready(function(){
-            var count=0;
-            var t = JSON.stringify({
-                        name:"customLayer",
-                        type:"FeatureCollection",
-                        features:[
-                            {
-                                type:"Feature",
-                                properties:{
-                                    title:'Helloworld-Version2',
-                                    img:'/public/image/logo.png',
-                                    link:'http://appforncu.appspot.com/',
-                                    number:10,
-                                    icon:{
-                                        icon:'fa-laptop',
-                                        iconColor:'#fff',
-                                        prefix:'fa',
-                                        markerColor:'#00f'
-                                    }
-                                },
-                                geometry:{
-                                    type:"Point",
-                                    coordinates:[24.968282,121.192511]
-                                }
-                            }]
-                    }
-            );
-            setInterval(attack,100);
-            function attack(){
+        eventCalendar = [
+                    {name:"期中考",from:"2014-04-14",to:"2014-04-18"},
+                    {name:"第2次校務會議",from:"2014-04-22",to:"2014-04-22"},
+                    {name:"大學部宿舍抽籤",from:"2014-04-28",to:"2014-05-09"},
+                    {name:"轉系所申請",from:"2014-05-01",to:"2014-05-13"},
+                    {name:"教職員工健康檢查",from:"2014-05-06",to:"2014-05-06"},
+                    {name:"研究所新生暑期借住宿舍申請",from:"2014-05-19",to:"2014-07-31"},
+                    {name:"校慶活動日",from:"2014-05-24",to:"2014-05-24"},
+                    {name:"暑修第一期登記",from:"2014-05-26",to:"2014-06-04"},
+                    {name:"大學部導師輔導選課",from:"2014-05-26",to:"2014-06-13"},
+                    {name:"學雜費減免申請",from:"2014-05-26",to:"2014-07-04"},
+                    {name:"大學部學生提前畢業申請截止",from:"2014-05-30",to:"2014-05-30"},
+                    {name:"端午節",from:"2014-06-02",to:"2014-06-02"},
+                    {name:"大學部暑宿申請",from:"2014-06-03",to:"2014-06-09"},
+                    {name:"受理全校研究生放棄103學年度住宿",from:"2014-06-03",to:"2014-06-30"},
+                    {name:"實施線上教學評量",from:"2014-06-06",to:"2014-06-15"},
+                    {name:"畢業典禮",from:"2014-06-07",to:"2014-06-07"},
+                    {name:"下學期課程初選",from:"2014-06-09",to:"2014-06-16"},
+                    {name:"第2學期休學申請截止",from:"2014-06-13",to:"2014-06-13"},
+                    {name:"期末考",from:"2014-06-16",to:"2014-06-20"},
+                    {name:"暑假開始",from:"2014-06-23",to:"2014-06-23"},
+                    {name:"大學部暑宿宿舍開舍",from:"2014-06-23",to:"2014-06-24"},
+                    {name:"102學年度第2學期大學部宿舍關舍",from:"2014-06-23",to:"2014-06-25"},
+                    {name:"暑修第1期上課期間",from:"2014-06-23",to:"2014-08-01"},
+                    {name:"研究生學位考試申請截止",from:"2014-06-30",to:"2014-06-30"},
+                    {name:"協助指考工作，暫停受理學位證書領取",from:"2014-07-01",to:"2014-07-03"},
+                    {name:"教師繳交學期成績",from:"2014-07-04",to:"2014-07-04"},
+                    {name:"暑修第2期登記",from:"2014-07-07",to:"2014-07-16"},
+                    {name:"學士班領取學位證書",from:"2014-07-07",to:"2014-07-31"},
+                    {name:"研究生學位考試結束",from:"2014-07-18",to:"2014-07-18"},
+                    {name:"研究生辦理離校手續及領取學位證書截止",from:"2014-07-31",to:"2014-07-31"},
+                    {name:"102學年度第2學期終了",from:"2014-07-31",to:"2014-07-31"}
+        ];
+
+        function sleep(milliseconds) {
+            var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+                if ((new Date().getTime() - start) > milliseconds){
+                    break;
+                }
+            }
+        }
+
+        createEvent = function(){
+            for(var i=0;i<eventCalendar.length;i++){
+                sleep(1000);
                 $.ajax({
                     type:'POST',
-                    url:"http://appforncu.appspot.com/getmap",
-                    data:{type:"create",data:t},
+                    url:"http://appforncu.appspot.com/getevent",
+                    data:{type:"create",data:JSON.stringify(eventCalendar[i])},
                     dataType:"text",
-                    success:function(textData){
-                        console.log(count++);
+                    success:function(data){
+                        console.log(data);
                     }
                 });
             }
-        });
+        };
     </script>
 </body>
 </html>
