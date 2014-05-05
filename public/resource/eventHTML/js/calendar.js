@@ -115,8 +115,11 @@ NCUCalendar.Calendar = function(initiator){
                     }
                 }
                 function applyEventToSelectorNameArray(){
-                    for(var i=startDate;i<=endDate;i++){
-                        var eachDate = thisYearAndMonth +"-"+ formatIntegerDayToString(i);
+
+                    var hasEventDays = [startDate,endDate];
+
+                    for(var i=0;i<=hasEventDays.length;i++){
+                        var eachDate = thisYearAndMonth +"-"+ formatIntegerDayToString(hasEventDays[i]);
                         eventSelectorNameArray.push('.calendar-day-'+eachDate);
                     }
                 }
