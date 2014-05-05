@@ -13,25 +13,45 @@
         @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
         body{
             font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             overflow-x: hidden;
-            color: #3e3e3e;
+            background-color: #e0e1e5;
+        }
+        a{
+            /*color: #801818;*/
+        }
+        #contactContainer{
+            box-sizing:border-box;
+            width: 100%;
+            padding: 0 10px;
         }
         table{
+            margin: 10px 0;
             width: 100%;
+            padding: 2px;
+            border-collapse: collapse;
+            box-shadow:0 0 12px -2px rgba(10%,10%,20%,0.5);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        tr:not(:first-child){
+            box-sizing:border-box;
+            border: 1px solid #286c55;
         }
         .trodd td{
-            background-color: #e2e2ee;
+            background-color: #78c4ee;
+            color: #333333;
         }
         .treven td{
-            background-color: #eeeecc;
+            background-color: #368ee0;
+            color: #eee;
         }
-        .trTitle{
-            background-color: #f3c9b7;
-        }
+        /*.trTitle{*/
+            /*background-color: #f3c9b7;*/
+        /*}*/
         .trHeader td{
-            border: 1px solid #3e3e3e;
+            /*border: 1px solid #3e3e3e;*/
         }
         .tdA{
             width: 40%;
@@ -42,12 +62,13 @@
         .tdC{
             width: 30%;
         }
-        #ncuContact{
-            font-size: 30px;
-            width: 100%;
+        #selectContainer{
+            width: 98%;
+            padding: 0 1%;
         }
-        .contactLocation{
-            color: #975051;
+        #ncuContact{
+            width: 100%;
+            font-size: 30px;
         }
         .contactLocation:hover{
             text-decoration: underline;
@@ -56,11 +77,9 @@
         #mapDialog{
             background-color: #000;
             position: fixed;
-            width : 80%;
-            height: 80%;
-            margin-left : 10%;
-            margin-right: 10%;
-            top: 50px;
+            width : 90%;
+            height: 90%;
+            margin:  5%;
         }
         #mapDialogContainer{
             width: 100%;
@@ -96,14 +115,16 @@
             </span>
         </div>
     </div>
-    <select id="ncuContact">
-        <option value="" disabled selected>選擇單位通訊錄</option>
-        <option value="contactA.html">行政單位通訊錄</option>
-        <option value="contactB.html">教學單位通訊錄</option>
-        <option value="contactC.html">研究單位通訊錄</option>
-        <option value="contactD.html">常用電話通訊錄</option>
-        <option value="contactE.html">學生宿舍通訊錄</option>
-    </select>
+    <div id="selectContainer">
+        <select id="ncuContact">
+            <option value="" disabled selected>選擇單位通訊錄</option>
+            <option value="contactA.html">行政單位通訊錄</option>
+            <option value="contactB.html">教學單位通訊錄</option>
+            <option value="contactC.html">研究單位通訊錄</option>
+            <option value="contactD.html">常用電話通訊錄</option>
+            <option value="contactE.html">學生宿舍通訊錄</option>
+        </select>
+    </div>
     <div id="contactContainer"></div>
     <script>
 
@@ -135,7 +156,7 @@
 
             selector_Contact.change(function(){
                 container_Contact.load("contacts/"+selector_Contact.val(),function(){
-                    $('.contactLocation').off(clickEventName).on('click',function(){
+                    $('.contactLocation').off('click').on('click',function(){
                         var pointName     = $(this).text().trim();
                         var buildingName  = buildingLocator.getByKey(pointName);
 
