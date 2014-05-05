@@ -23,20 +23,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="leftSide.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
+      <file leaf-file-name="traffic.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="9" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.75213677" vertical-offset="900" max-vertical-offset="1980">
+            <state line="15" column="6" selection-start="726" selection-end="726" vertical-scroll-proportion="20.689655" vertical-offset="900" max-vertical-offset="1620">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="traffic.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="54" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5863192" vertical-offset="660" max-vertical-offset="2620">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="traffic.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
+      <file leaf-file-name="NCUTraffic.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="30" selection-start="255" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2620">
-              <folding />
+            <state line="177" column="46" selection-start="6839" selection-end="6839" vertical-scroll-proportion="-11.25" vertical-offset="625" max-vertical-offset="1720">
+              <folding>
+                <element signature="e#72#3407#0" expanded="false" />
+                <element signature="e#5127#6511#0" expanded="false" />
+                <element signature="e#7240#8278#0" expanded="false" />
+                <element signature="e#8319#8554#0" expanded="false" />
+                <element signature="e#9605#10422#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +111,6 @@
         <option value="$PROJECT_DIR$/app/Map/view/index.html" />
         <option value="$PROJECT_DIR$/app/Map/view/traffic.html" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css" />
-        <option value="$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css" />
         <option value="$PROJECT_DIR$/app/Map/view/contacts/contactA.html" />
         <option value="$PROJECT_DIR$/app/Map/view/contacts/contactE.html" />
         <option value="$PROJECT_DIR$/app/Map/view/contacts/contactB.html" />
@@ -102,6 +118,7 @@
         <option value="$PROJECT_DIR$/app/Map/view/contacts/contactC.html" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js" />
         <option value="$PROJECT_DIR$/app/Map/view/leftSide.html" />
+        <option value="$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css" />
       </list>
     </option>
   </component>
@@ -309,6 +326,10 @@
               <option name="myItemId" value="trafficHTML" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -351,54 +372,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventHTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCUAPP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventHTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -748,7 +721,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/jquery.nouislider.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/jquery.nouislider.min.css">
@@ -786,20 +761,6 @@
     <entry file="file://$PROJECT_DIR$/public/script/tool/ModuleController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="11" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="53" selection-start="9308" selection-end="9308" vertical-scroll-proportion="0.61199296" vertical-offset="813" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#72#3407#0" expanded="false" />
-            <element signature="e#5127#6511#0" expanded="false" />
-            <element signature="e#6545#7140#0" expanded="false" />
-            <element signature="e#7240#8278#0" expanded="false" />
-            <element signature="e#8319#8554#0" expanded="false" />
-            <element signature="e#9605#10422#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/leafletMap/js/leaflet.usermarker.js">
@@ -935,15 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="726" selection-end="726" vertical-scroll-proportion="0.11111111" vertical-offset="235" max-vertical-offset="1620">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/css/clndr2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="174" column="51" selection-start="3993" selection-end="3993" vertical-scroll-proportion="0.48859936" vertical-offset="3180" max-vertical-offset="4280">
@@ -1025,16 +977,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
+    <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="255" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2620">
+        <state line="18" column="9" selection-start="608" selection-end="608" vertical-scroll-proportion="-0.82051283" vertical-offset="840" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
+    <entry file="file://$PROJECT_DIR$/app/Map/view/traffic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="9" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.75213677" vertical-offset="900" max-vertical-offset="1980">
+        <state line="15" column="6" selection-start="726" selection-end="726" vertical-scroll-proportion="20.689655" vertical-offset="900" max-vertical-offset="1620">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/js/NCUTraffic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="46" selection-start="6839" selection-end="6839" vertical-scroll-proportion="-11.25" vertical-offset="625" max-vertical-offset="1720">
+          <folding>
+            <element signature="e#72#3407#0" expanded="false" />
+            <element signature="e#5127#6511#0" expanded="false" />
+            <element signature="e#7240#8278#0" expanded="false" />
+            <element signature="e#8319#8554#0" expanded="false" />
+            <element signature="e#9605#10422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="54" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5863192" vertical-offset="660" max-vertical-offset="2620">
           <folding />
         </state>
       </provider>
