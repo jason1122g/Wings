@@ -47,9 +47,11 @@ body{
 .weekDays:hover{
     cursor: pointer;
     background-image: linear-gradient(#4ba9ef, #4eaff8);
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4ba9ef), color-stop(100%, #4eaff8));
 }
 .weekDaysChoosed{
     background-image: linear-gradient(#4c68d7, #4964ce) !important;
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4c68d7), color-stop(100%, #4964ce)) !important;
 }
 .weekDays{
     border: 1px solid #848688;
@@ -58,6 +60,7 @@ body{
     color: #eee;
     text-align: center;
     background-image: linear-gradient(#3a98ef, #368ee0);
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a98ef), color-stop(100%, #368ee0));
     box-shadow:0 0 6px -2px rgba(10%,10%,20%,0.5);
     border-radius: 8px;
     width: 12.27%;
@@ -71,6 +74,7 @@ body{
     text-align: center;
     color: #eee;
     background-image: linear-gradient(#3a98ef, #368ee0);
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a98ef), color-stop(100%, #368ee0));
     border: 1px solid #848688;
     border-radius: 8px;
     box-shadow:0 0 6px -2px rgba(10%,10%,20%,0.5);
@@ -84,6 +88,7 @@ body{
 #queryButton:hover{
     cursor: pointer;
     background-image: linear-gradient(#4ba9ef, #4eaff8);
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4ba9ef), color-stop(100%, #4eaff8));
 }
 #stationContainer_box{
     position: relative;
