@@ -4,7 +4,7 @@ body{
     font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
     margin: 0px;
     padding: 0px;
-    background-color: #6e6e66;
+    background-color: #e0e1e5;
     overflow-x: hidden;
 }
 #sliderContainer{
@@ -21,37 +21,47 @@ body{
     float: left;
     padding-left: 30px;
     padding-right: 30px;
-    width: 80%;
+    width: 70%;
 }
 .timeSliderLabel{
     color: #eeeeee;
-    background-color: #8f8f87;
+    background-color: #5f878f;
     float: left;
     margin: auto 1%;
     height: 25px;
     line-height: 25px;
-    width: 8%;
+    width: 13%;
     font-size: 10px;
 }
-
+#weekController{
+    background-color: #77a8bf;
+    padding: 10px 0;
+    margin: 10px 5px;
+    border: 1px solid #848688;
+    border-radius: 8px;
+    box-shadow:0 0 12px -2px rgba(20%,20%,40%,0.5);
+}
 #weekContainer{
     width: 100%;
-
 }
 .weekDays:hover{
     cursor: pointer;
-    background-color: #85a5d9;
+    background-image: linear-gradient(#4ba9ef, #4eaff8);
 }
 .weekDaysChoosed{
     background-color: #7996c7 !important;
 }
 .weekDays{
+    border: 1px solid #848688;
+    box-sizing:border-box;
     float: left;
     color: #eee;
     text-align: center;
-    background-color: #a9c4d9;
-    width: 12.28%;
-    padding: 5px 0px;
+    background-image: linear-gradient(#3a98ef, #368ee0);
+    box-shadow:0 0 6px -2px rgba(10%,10%,20%,0.5);
+    border-radius: 8px;
+    width: 12.27%;
+    padding: 5px 0;
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 20px;
@@ -60,42 +70,56 @@ body{
     display: inline-block;
     text-align: center;
     color: #eee;
-    background-color: #aab2d9;
+    background-image: linear-gradient(#3a98ef, #368ee0);
+    border: 1px solid #848688;
+    border-radius: 8px;
+    box-shadow:0 0 6px -2px rgba(10%,10%,20%,0.5);
     width: 98%;
     height:40px;
     line-height: 40px;
-    margin: 20px 1%;
+    margin-left: 1%;
+    margin-right:1%;
+    margin-top: 10px;
 }
 #queryButton:hover{
     cursor: pointer;
-    background-color: #8768d9;
+    background-image: linear-gradient(#4ba9ef, #4eaff8);
 }
 #stationContainer_box{
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 50px;
 }
 #stationContainer{
     position: absolute;
-    background-color: rgba(225, 233, 210, 0.7);
+    background-color: rgba(102, 182, 162, 0.85);
     width: 100%;
-    height: 30px;
+    height: 50px;
+    line-height: 50px;
     font-weight: bold;
 }
 .station{
-    color: #3e3e3e;
-    text-align: center;
-    float: left;
-    padding: 5px 0;
-    margin: 3px 0%;
-    width: 25%;
-}
-.listStation{
-    border-bottom: 1px solid #eee;
     color: #eee;
     text-align: center;
     float: left;
-    padding: 5px 0;
-    margin: 3px 0%;
     width: 25%;
+}
+.listBusRow{
+    height: 27px;
+    clear: left;
+    border: 1px solid #848688;
+    border-radius: 8px;
+    box-shadow:0 0 6px -2px rgba(10%,10%,20%,0.5);
+    margin: 10px 10px;
+    background-color: #0078A8;
+}
+.listStation{
+    background-color: #0078A8;
+    border-radius: 8px;
+    color: #eee;
+    text-align: center;
+    padding: 5px 1%;
+    margin: 0 0;
+    float: left;
+    width: 23%;
 }
