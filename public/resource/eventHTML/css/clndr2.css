@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 body{
     font-family: Inconsolata, Monaco, 'Andale Mono', Courier,"微軟正黑體";
+    background-color: #e0e1e5;
 }
 .noselect {
   -webkit-user-select: none;
@@ -18,11 +19,8 @@ body{
 	text-transform: uppercase;
 	padding: 10px ;
 	text-align: center;
-	background: #69a776;
-	/*border-radius: 5px 5px 0 0;*/
-	/*-webkit-border-radius: 5px 5px 0 0;*/
-	/*-moz-border-radius: 5px 5px 0 0;*/
-	/*-o-border-radius: 5px 5px 0 0;*/
+    border: 1px solid #6386a1;
+    background-image: linear-gradient(#4dbae8, #4ab2df);
 	margin-bottom:20px;
 }
 .cal1 .clndr .clndr-controls .month {
@@ -73,9 +71,10 @@ body{
   table-layout: fixed;
   width:100%;
   margin:0 0;
-    padding-left: 0px;
-    padding-right: 0px;
   padding-bottom: 30px;
+    background-color: #88bcef;
+    border: 1px solid #848688;;
+    border-radius: 5px;
 }
 .cal1 .clndr .clndr-table .header-days {
    font-size:1em;
@@ -83,7 +82,7 @@ body{
 .cal1 .clndr .clndr-table .header-days .header-day {
   vertical-align: middle;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: #dccfd6
 }
 .cal1 .clndr .clndr-table tr {
     height:70px;
@@ -95,14 +94,14 @@ body{
   width: 100%;
   height: inherit;
   color:#FFF;
-  border: 1px dashed rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   vertical-align:middle;
 }
 .cal1 .clndr .clndr-table tr .day:hover{
     color: #292927;
 }
 .cal1 .clndr .clndr-table tr .day.today {
-    border: 3px solid #000;
+    border: 3px solid #ffffff;
   	/*background: #EC3D68;*/
 	 /*color: #FFF;*/
 	 /*border-radius: 2em;*/
@@ -129,18 +128,19 @@ body{
   font-size:1em;
   text-align:center;
   cursor:pointer;
+
 }
 .cal1 .clndr .clndr-table tr .empty,
 .cal1 .clndr .clndr-table tr .adjacent-month {
   width: 100%;
   height: inherit;
-  color: rgba(255, 255, 255, 0.53);
+  color: rgba(255, 255, 255, 0.2);
 }
 .cal1 .clndr .clndr-table tr .adjacent-month:hover{
-    color: rgba(255, 255, 255, 0.53);
+    color: rgba(255, 255, 255, 0.2);
 }
 .cal1 .hasEvent{
-    background-color: #9f7c4c;
+    background-color: #3a98ef;
 }
 
 @media all and (max-width:320px) {
@@ -148,37 +148,42 @@ body{
 		height: 35px;
 	}
 }
-
 .cal1{
-    background-color: #8ee275;
     width: 100%;
-    margin: auto;
+    margin-top: 15px;
     font-size: 50px;
+}
+.clndr{
+    /*background-color: #56c5bc;*/
+    padding: 0 8px;
 }
 #eventList{
     width: 100%;
-    /*height: 350px;*/
-    /*overflow-y: auto;*/
     text-align: center;
     margin: 0px auto;
     color: #353535;
 }
 .eventLine{
-    margin-top: 10px;
+    margin: 10px 0;
+    padding: 0 8px;
 }
 .eventContent{
     text-align: center;
     color: #292927;
+    border: 1px solid #848688;;
+    border-radius: 5px;
+    box-shadow:0 0 12px -2px rgba(20%,20%,40%,0.5);
 }
 .eventName{
     font-size: 40px;
-    background-color: #5c9aa6;
+    background-image: linear-gradient(#3a98ef, #368ee0);
     float: none;
     width: 100%;
+    color: #fff;
 }
 .eventTime{
     font-size: 28px;
-    background-color: #90cbdd;
+    background-color: #88bcef;
 }
 
 @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),

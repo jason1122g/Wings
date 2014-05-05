@@ -26,11 +26,13 @@
     </div>
     <div id="sliderContainer"></div>
     <div id="queryButton">開始搜尋</div>
-    <div id="stationContainer">
-        <div class="station">車號</div>
-        <div class="station">中壢車站</div>
-        <div class="station">中央大學</div>
-        <div class="station">高鐵桃園</div>
+    <div id="stationContainer_box">
+        <div id="stationContainer">
+            <div class="station">車號</div>
+            <div class="station">中壢車站</div>
+            <div class="station">中央大學</div>
+            <div class="station">高鐵桃園</div>
+        </div>
     </div>
     <div id="busContainer"></div>
     <script>
@@ -57,7 +59,7 @@
                     }
                 } else{
                     if(checkFlag){
-                        stationContainer.css('position','relative');
+                        stationContainer.css('position','absolute');
                         checkFlag = false;
                     }
                 }
