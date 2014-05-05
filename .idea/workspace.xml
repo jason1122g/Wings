@@ -23,56 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Map/view/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="31" selection-start="860" selection-end="860" vertical-scroll-proportion="-8.965517" vertical-offset="160" max-vertical-offset="3700">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contactC.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Map/view/contacts/contactC.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="9" selection-start="3416" selection-end="3416" vertical-scroll-proportion="-7.7586207" vertical-offset="3515" max-vertical-offset="6500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leftSide.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="leftSide.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="42" selection-start="2094" selection-end="2094" vertical-scroll-proportion="-5.0" vertical-offset="1355" max-vertical-offset="1940">
+            <state line="25" column="58" selection-start="842" selection-end="842" vertical-scroll-proportion="0.85470086" vertical-offset="0" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js">
+      <file leaf-file-name="traffic.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="20" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.30116472" vertical-offset="899" max-vertical-offset="3440">
-              <folding>
-                <element signature="e#359#721#0" expanded="false" />
-                <element signature="e#767#1039#0" expanded="false" />
-                <element signature="e#3786#4877#0" expanded="false" />
-                <element signature="e#4423#4558#0" expanded="false" />
-                <element signature="e#4612#4709#0" expanded="false" />
-                <element signature="e#4764#4859#0" expanded="false" />
-                <element signature="e#5964#6310#0" expanded="false" />
-                <element signature="e#6360#7013#0" expanded="false" />
-                <element signature="e#7068#7244#0" expanded="false" />
-                <element signature="e#7313#7553#0" expanded="false" />
-                <element signature="e#8980#9068#0" expanded="false" />
-                <element signature="e#9580#10210#0" expanded="false" />
-                <element signature="e#10464#10510#0" expanded="false" />
-                <element signature="e#10562#10637#0" expanded="false" />
-                <element signature="e#10679#10839#0" expanded="false" />
-                <element signature="e#10880#10925#0" expanded="false" />
-                <element signature="e#10972#11116#0" expanded="false" />
-              </folding>
+            <state line="6" column="30" selection-start="255" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2620">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,8 +100,8 @@
         <option value="$PROJECT_DIR$/app/Map/view/contacts/contactB.html" />
         <option value="$PROJECT_DIR$/app/Map/view/contact.html" />
         <option value="$PROJECT_DIR$/app/Map/view/contacts/contactC.html" />
-        <option value="$PROJECT_DIR$/app/Map/view/leftSide.html" />
         <option value="$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js" />
+        <option value="$PROJECT_DIR$/app/Map/view/leftSide.html" />
       </list>
     </option>
   </component>
@@ -321,6 +285,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trafficHTML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NCUAPP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trafficHTML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -946,13 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="308" selection-end="308" vertical-scroll-proportion="-1.009772" vertical-offset="780" max-vertical-offset="2620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Map/view/contacts/contactA.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="11" selection-start="970" selection-end="970" vertical-scroll-proportion="-11.620689" vertical-offset="723" max-vertical-offset="14760">
@@ -995,16 +1000,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="42" selection-start="2094" selection-end="2094" vertical-scroll-proportion="-5.0" vertical-offset="1355" max-vertical-offset="1940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resource/eventHTML/js/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="20" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.30116472" vertical-offset="899" max-vertical-offset="3440">
+        <state line="76" column="0" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.8668885" vertical-offset="659" max-vertical-offset="3440">
           <folding>
             <element signature="e#359#721#0" expanded="false" />
             <element signature="e#767#1039#0" expanded="false" />
@@ -1024,6 +1022,20 @@
             <element signature="e#10880#10925#0" expanded="false" />
             <element signature="e#10972#11116#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resource/trafficHTML/css/traffic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="30" selection-start="255" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Map/view/leftSide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="58" selection-start="842" selection-end="842" vertical-scroll-proportion="0.85470086" vertical-offset="0" max-vertical-offset="1980">
+          <folding />
         </state>
       </provider>
     </entry>
