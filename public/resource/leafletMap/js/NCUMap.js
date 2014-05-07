@@ -15,13 +15,11 @@ NCUMap.Map = function(init){
     }
     var customMarker = init["customMarker"];
 
-
     var clickEventName = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
     var locationNameToLatlng  = {},
         layerIdToRefernce = {},
         layerCodeInput,   //jquery selector(input/text)
         layerDivGroup;    //jquery selector(div/checkbox,delete,label)
-
 
     var map = initMap();
     initControllers();
@@ -48,6 +46,7 @@ NCUMap.Map = function(init){
         initMenu();
         initSelector();
         initGPSLocator();
+
         function initMenu(){
             initSetting();
             initCoder();
@@ -211,10 +210,10 @@ NCUMap.Map = function(init){
             }
         }
     }
+
     function setViewToLatlng(target){
         map.setView(target,18,{animate:true});
     }
-
     function setViewToLocationName(locationName){
         var latlng = locationNameToLatlng[locationName];
         if(typeof latlng != 'undefined'){
